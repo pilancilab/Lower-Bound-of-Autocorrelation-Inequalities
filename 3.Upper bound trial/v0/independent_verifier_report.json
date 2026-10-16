@@ -1,0 +1,146 @@
+{
+  "verdict": "VALID",
+  "certified_upper_bound": 0.3809106914151504,
+  "truth_implementation": "loop",
+  "claimed_upper_bound": 0.3809106914151508,
+  "ub_discrepancy": 4.440892098500626e-16,
+  "argmax_k_truth": -86,
+  "argmax_k_claimed": -86,
+  "argmax_shift_matches": true,
+  "implementation_cross_check": {
+    "loop_vs_einsum": 8.326672684688674e-16,
+    "loop_vs_slice": 7.216449660063518e-16,
+    "loop_vs_convol": 7.216449660063518e-16,
+    "einsum_vs_slice": 1.6653345369377348e-16,
+    "einsum_vs_convol": 1.6653345369377348e-16,
+    "slice_vs_convol": 0.0,
+    "ok": true
+  },
+  "timings_sec": {
+    "loop": 0.07367515563964844,
+    "einsum": 0.00412297248840332,
+    "slice": 0.0011973381042480469,
+    "convolve": 0.00023245811462402344
+  },
+  "feasibility": {
+    "box_lower_residual": 0.0,
+    "box_upper_residual": 0.0,
+    "mass_error": 0.0,
+    "n_matches_file": true,
+    "ok": true
+  },
+  "boundary_shift_max_M": 7.612445877577025e-10,
+  "refinement": {
+    "factor": 4,
+    "ub_on_fine_grid": 0.3809106914151508,
+    "argmax_k_on_fine_grid": -344,
+    "monotone_ok": true
+  },
+  "near_active_shifts": [
+    {
+      "k": -86,
+      "M_k": 0.3809106914151504,
+      "gap_to_max": 0.0
+    },
+    {
+      "k": -154,
+      "M_k": 0.38091069141515016,
+      "gap_to_max": 2.220446049250313e-16
+    },
+    {
+      "k": -189,
+      "M_k": 0.3809106914151492,
+      "gap_to_max": 1.1657341758564144e-15
+    },
+    {
+      "k": 106,
+      "M_k": 0.3809106914151483,
+      "gap_to_max": 2.1094237467877974e-15
+    },
+    {
+      "k": 121,
+      "M_k": 0.38091069141514794,
+      "gap_to_max": 2.4424906541753444e-15
+    },
+    {
+      "k": -169,
+      "M_k": 0.38091069141514683,
+      "gap_to_max": 3.552713678800501e-15
+    },
+    {
+      "k": -136,
+      "M_k": 0.3809106914151431,
+      "gap_to_max": 7.271960811294775e-15
+    },
+    {
+      "k": -151,
+      "M_k": 0.38091069141513734,
+      "gap_to_max": 1.304512053934559e-14
+    },
+    {
+      "k": -171,
+      "M_k": 0.3809106914151303,
+      "gap_to_max": 2.0095036745715333e-14
+    },
+    {
+      "k": 70,
+      "M_k": 0.3809106914151297,
+      "gap_to_max": 2.070565940925917e-14
+    },
+    {
+      "k": 179,
+      "M_k": 0.3809106914151263,
+      "gap_to_max": 2.4091839634365897e-14
+    },
+    {
+      "k": 147,
+      "M_k": 0.38091069141512607,
+      "gap_to_max": 2.4313884239290928e-14
+    },
+    {
+      "k": 125,
+      "M_k": 0.38091069141512457,
+      "gap_to_max": 2.581268532253489e-14
+    },
+    {
+      "k": -124,
+      "M_k": 0.3809106914151184,
+      "gap_to_max": 3.197442310920451e-14
+    },
+    {
+      "k": -103,
+      "M_k": 0.380910691415115,
+      "gap_to_max": 3.5360603334311236e-14
+    }
+  ],
+  "fourier_top_modes": [
+    {
+      "freq_bin": 1,
+      "rel_energy": 0.5372939675510437
+    },
+    {
+      "freq_bin": 3,
+      "rel_energy": 0.0652263730977989
+    },
+    {
+      "freq_bin": 8,
+      "rel_energy": 0.044741252358440065
+    },
+    {
+      "freq_bin": 7,
+      "rel_energy": 0.04242982038387612
+    },
+    {
+      "freq_bin": 6,
+      "rel_energy": 0.03830296024199687
+    }
+  ],
+  "metadata": {
+    "n": 600,
+    "sequence_sha256": "014c8351149b76201a41e2a9e8ee959b6cef987a4740723461b1715e6aa8c015",
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+    "verifier_file": "/home/sykim/Theory_Harness/3.Upper bound trial/v0/independent_verify.py"
+  }
+}
