@@ -1,0 +1,10 @@
+name = "verify"
+defaultTargets = ["Verify"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+version = "git#v4.32.0"
+
+[[lean_lib]]
+name = "Verify"

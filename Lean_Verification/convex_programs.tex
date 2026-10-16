@@ -1,0 +1,319 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\psdge}{\succeq 0}
+\DeclareMathOperator{\supp}{supp}
+
+\title{Exact Convex Programs for Two Lower Bounds\\[2pt]
+\large v51 (Autocorrelation Inequality~6.2) and the Er\H{o}s Minimum-Overlap ``Dirichlet Sandwich'' (v7)}
+\author{Transcribed verbatim from \texttt{convex\_code.py}; mathematical core Lean-verified}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent
+This document states the two convex programs \emph{exactly} as implemented in
+code, together with a precise description of the new constraint each one adds.
+The bug-prone algebraic/analytic core of each new constraint has been
+formalised and machine-checked in Lean~4 / Mathlib (files
+\texttt{Verify/V51.lean} and \texttt{Verify/ErdosV7.lean}); the theorems there
+depend only on the three standard axioms \texttt{propext},
+\texttt{Classical.choice}, \texttt{Quot.sound} (no \texttt{sorry}).
+
+Throughout, a Hermitian matrix $H=\re H + i\,\im H\in\C^{d\times d}$ is imposed
+to be PSD through its real block lift
+\[
+  H\psdge \iff
+  \begin{bmatrix} \re H & -\im H\\ \im H & \re H\end{bmatrix}\psdge ,
+\]
+which is valid because $H$ is Hermitian ($\re H$ symmetric, $\im H$
+antisymmetric).
+
+%======================================================================
+\section{Program 1: Autocorrelation Inequality 6.2, v51}
+%======================================================================
+
+\subsection*{Setting}
+We seek a lower bound on the constant $C_{6.2}$. The unknown function
+$f\ge 0$ is supported in $[-\tfrac14,\tfrac14]\subset\T=\R/\Z$, with Fourier
+data
+\[
+  \hat f(k)=a_k-i\,b_k\quad(k\ge 0),\qquad a_0=1,\ b_0=0 .
+\]
+Integers $N$ (grid) and $K$ (degree) are fixed; $L_f:=\dfrac{1}{4N}$, and the
+cells $C_j:=\bigl[-\tfrac14+jL_f,\ -\tfrac14+(j+1)L_f\bigr]$,
+$j=0,\dots,2N-1$, partition $[-\tfrac14,\tfrac14]$.
+
+\subsection*{Variables}
+\[
+\begin{aligned}
+&\Omega\in\R_{\ge 0}, \quad
+ p\in\R^{2N}_{\ge 0}, \quad
+ a,b\in\R^{K+2}\ (\text{indices }0,\dots,K+1),\\
+&M\in\mathbb{S}^{2K+1}\ (\text{symmetric}),\quad
+ v\in\R^{K}_{\ge 0},\quad
+ Q\in\mathbb{H}^{K+1}\ (\text{Hermitian}).
+\end{aligned}
+\]
+
+\subsection*{Constant cell bounds}
+For $k=1,\dots,K+1$ and each cell $C_j$,
+\[
+\begin{aligned}
+\underline{c}_{k,j}&=\min_{x\in C_j}\cos(2\pi k x), &
+\overline{c}_{k,j}&=\max_{x\in C_j}\cos(2\pi k x),\\
+\underline{s}_{k,j}&=\min_{x\in C_j}\sin(2\pi k x), &
+\overline{s}_{k,j}&=\max_{x\in C_j}\sin(2\pi k x).
+\end{aligned}
+\]
+
+\subsection*{The program}
+\[
+\boxed{\ \min\ \Omega\ }\quad\text{subject to}
+\]
+\begin{align}
+&\textstyle\sum_{j} p_j = 1,\qquad a_0=1,\qquad b_0=0. \tag{P1}\\[2pt]
+% moment lift
+&M\psdge,\quad M_{0,0}=1,\quad
+  M_{0,k}=M_{k,0}=a_k,\ \ M_{0,K+k}=M_{K+k,0}=b_k \quad(k=1,\dots,K). \tag{P2}\\[2pt]
+% cell bounds
+&\textstyle\sum_j \underline{c}_{k,j}\,p_j\le a_k\le \sum_j \overline{c}_{k,j}\,p_j,
+ \quad
+ \sum_j \underline{s}_{k,j}\,p_j\le b_k\le \sum_j \overline{s}_{k,j}\,p_j
+ \quad(k=1,\dots,K+1). \tag{P3}\\[2pt]
+% energy / squared v14
+&v_{k-1}\ge \bigl(M_{k,k}+M_{K+k,K+k}\bigr)^2\quad(k=1,\dots,K),
+ \qquad
+ \Omega\ \ge\ 1+2\sum_{k=1}^{K} w_k\, v_{k-1}, \tag{P4}\\
+&\qquad\text{with weights } w_k:=1-\tfrac{k}{K+1}. \notag\\[2pt]
+% Fejer-Riesz
+&Q\psdge,\qquad \re\tr Q=\Omega-1, \tag{P5}\\
+&\re\!\Big(\sum_{i=0}^{K-k} Q_{i,\,i+k}\Big)= -\,w_k\bigl(M_{k,k}-M_{K+k,K+k}\bigr),
+ \quad
+ \im\!\Big(\sum_{i=0}^{K-k} Q_{i,\,i+k}\Big)= 2\,w_k\, M_{k,\,K+k}
+ \quad(k=1,\dots,K). \notag\\[2pt]
+% plain Bochner (v45)
+&\text{Plain Bochner: } T^{f}\psdge,\quad
+ T^{f}_{ij}=a_{|i-j|}-i\,\sgn(i-j)\,b_{|i-j|}
+ \quad(0\le i,j\le K). \tag{P6}
+\end{align}
+
+\subsection*{The new v51 constraint (localized / Putinar Bochner)}
+The localizer $h(x)=\cos(2\pi x)$ satisfies $h\ge 0$ on $[-\tfrac14,\tfrac14]$
+(with zeros at $x=\pm\tfrac14$), so $\nu:=h\,f$ is a positive measure on $\T$.
+Its Toeplitz symbol is
+\[
+  \hat\nu(k)=\tfrac12\bigl(\hat f(k-1)+\hat f(k+1)\bigr),
+\]
+whose real and imaginary parts (verified in \texttt{V51.lean}, theorems
+\texttt{nuhat\_re}, \texttt{nuhat\_im}) are
+\[
+\boxed{\ \re\hat\nu(k)=\tfrac12\bigl(a_{|k-1|}+a_{|k+1|}\bigr),\qquad
+ \im\hat\nu(k)=-\tfrac12\bigl(\sgn(k-1)\,b_{|k-1|}+\sgn(k+1)\,b_{|k+1|}\bigr)\ }
+\]
+with the convention $\sgn(0)=0$. The new LMI is
+\begin{equation}
+ T^{\nu}\psdge,\qquad
+ T^{\nu}_{ij}=\re\hat\nu(i-j)+i\,\im\hat\nu(i-j)\qquad(0\le i,j\le K). \tag{P7$^{\star}$}
+\end{equation}
+Hermiticity $\hat\nu(-k)=\overline{\hat\nu(k)}$ (theorem \texttt{nuhat\_conj})
+justifies the real block lift. Validity — that every admissible $f$ (a
+nonnegative measure on $[-\tfrac14,\tfrac14]$) satisfies (P7$^\star$) — is the
+identity, for $w\in\C^{K+1}$,
+\[
+ \sum_{i,j} \overline{w_i}\,T^{\nu}_{ij}\,w_j
+ \ =\ \int_{-1/4}^{1/4}\!\cos(2\pi x)\,\Big|\sum_{l} w_l e^{2\pi i l x}\Big|^2 f(x)\,dx\ \ge 0,
+\]
+proved for finite atomic measures in \texttt{V51.lean}
+(\texttt{localized\_toeplitz\_form\_eq}, \texttt{localized\_toeplitz\_form\_nonneg}),
+together with $\cos(2\pi x)\ge 0$ on $[-\tfrac14,\tfrac14]$
+(\texttt{cos\_localizer\_nonneg}).
+
+%======================================================================
+\section{Program 2: Er\H{o}s Minimum Overlap, White setup, v7}
+%======================================================================
+
+\subsection*{Setting}
+On the period-$4$ torus $[-2,2]$, $f:[-1,1]\to[0,1]$ with $g=1-f$ and
+$\int_{-1}^{1} f = 1$, so the normalised Fourier coefficient at frequency~$0$
+is $\hat f(0)=\tfrac14$. Fix integers $N,T,R$ with $L:=2/N$ and shape
+parameters $h_1,h_2,p_1,p_2,q_1,q_2$. The variables carry a Fourier/kernel
+representation $(a_m,b_m)$ ($m=1,\dots,2R$), auxiliary lifts, and a
+grid $(w_j,v_j)$.
+
+\subsection*{Variables}
+\[
+\begin{aligned}
+&\Omega\in\R_{\ge0},\quad w,v\in\R^{N+1}_{\ge0}\ (w_0=v_0=0),\quad
+  c,d\in\R^{T+1}\ (c_0=d_0=0),\\
+&\epsilon,\delta\in\R^{R+1}\ (\epsilon_0=\delta_0=0),\quad
+  A^{\mathrm{odd}}\in\R^{2R+1},\quad A^{\mathrm{even}}\in\R^{R+1},\\
+&a,b\in\R^{2R+1}\ (a_0=b_0=0),\quad s\in\R^{T+1}_{\ge0}\ (s_0=0).
+\end{aligned}
+\]
+
+\subsection*{Constant arrays}
+For $m=1,\dots,2R$, $k=1,\dots,T$, $j=1,\dots,N$:
+\[
+\begin{aligned}
+\mathrm{ctoa}_{m,k}&=\frac{(-1)^k}{m^2-4k^2}, &
+\mathrm{dtob}_{m,k}&=\frac{k(-1)^k\sin(\pi m/2)}{m^2-4k^2},\\[4pt]
+\theta_{j,m}&=\frac{\pi m L (j-\tfrac12)}{2}, &
+\rho_m&=\frac{\pi m L}{4},\\[4pt]
+\alpha^{+}_{j,m}&=\cos\theta_{j,m}+\rho_m, &
+\alpha^{-}_{j,m}&=\cos\theta_{j,m}-\rho_m,\\
+\beta^{+}_{j,m}&=\sin\theta_{j,m}+\rho_m, &
+\beta^{-}_{j,m}&=\sin\theta_{j,m}-\rho_m.
+\end{aligned}
+\]
+
+\subsection*{The program}
+\[
+\boxed{\ \min\ \Omega\ }\quad\text{subject to}
+\]
+
+\paragraph{(A) Kernel $\leftrightarrow$ Fourier coupling.} For $m=1,\dots,2R$
+(with $\sigma_m:=\sin(\pi m/2)$),
+\begin{align}
+m=2r:\quad & a_m=\tfrac12 c_r,\qquad b_m=\tfrac12 d_r, \tag{E1}\\
+m=2r-1:\quad & a_m=\epsilon_r+\frac{2m}{\pi}\,\sigma_m\Big(\frac{1}{2m^2}
+   +\sum_{k=1}^{T}\mathrm{ctoa}_{m,k}\,c_k\Big),\quad
+ b_m=\delta_r+\frac{4}{\pi}\sum_{k=1}^{T}\mathrm{dtob}_{m,k}\,d_k. \tag{E2}
+\end{align}
+
+\paragraph{(B) Grid / normalisation / moment bounds.}
+\begin{align}
+&\Omega\le 1,\qquad w_j\le\Omega,\ \ v_j\le\Omega\quad(j=1,\dots,N),\qquad
+  L\textstyle\sum_{j=1}^{N}(w_j+v_j)=1. \tag{E3}\\
+&h_1\le L^2\!\sum_{j=1}^N\!\bigl(j\,w_j-(j-1)v_j\bigr),\qquad
+  L^2\!\sum_{j=1}^N\!\bigl((j-1)w_j-j\,v_j\bigr)\le h_2. \tag{E4}\\
+&L^3\!\sum_{j=1}^N (j-1)^2(w_j+v_j)\le \tfrac23+\tfrac{h_2^2}{2},\qquad
+  \tfrac23+\tfrac{h_1^2}{2}\le L^3\!\sum_{j=1}^N j^2(w_j+v_j). \tag{E5}
+\end{align}
+
+\paragraph{(C) Trigonometric-moment sandwich.} For $m=1,\dots,2R$,
+\begin{align}
+&\tfrac{L}{2}\sum_{j=1}^N \alpha^{-}_{j,m}(w_j+v_j)
+   \ \le\ \frac{4\sigma_m}{\pi m}\,a_m-2\bigl(a_m^2+b_m^2\bigr), \tag{E6}\\
+&\tfrac{L}{2}\sum_{j=1}^N\bigl(\beta^{-}_{j,m}w_j-\beta^{+}_{j,m}v_j\bigr)
+   \ \le\ -\frac{4\sigma_m}{\pi m}\,b_m
+   \ \le\ \tfrac{L}{2}\sum_{j=1}^N\bigl(\beta^{+}_{j,m}w_j-\beta^{-}_{j,m}v_j\bigr). \tag{E7}
+\end{align}
+
+\paragraph{(D) Tail / box bounds.} For $m=1,\dots,R$ with $\mu:=2m-1$ and
+$\Delta_m:=4-(\mu/T)^2$,
+\begin{equation}
+|\epsilon_m|\le \frac{1}{\pi\,\Delta_m}\cdot\frac{2\mu}{\sqrt{6T^3}},\qquad
+|\delta_m|\le \frac{4}{\pi\,\Delta_m}\cdot\frac{1}{\sqrt{2T}}. \tag{E8}
+\end{equation}
+For $k=1,\dots,T$:
+\begin{equation}
+|c_k|\le\tfrac{2}{\pi},\quad |d_k|\le\tfrac{2}{\pi},\qquad
+\sum_{k=1}^T\bigl(c_k^2+d_k^2\bigr)\le\tfrac12,\qquad
+p_1\le c_1\le p_2,\quad q_1\le d_1\le q_2. \tag{E9}
+\end{equation}
+\begin{equation}
+\tfrac{L}{2}\sum_{j=1}^N\alpha^{+}_{j,2}(w_j+v_j)\ \ge\ -\tfrac12\bigl(p_2^2+\max(q_1^2,q_2^2)\bigr). \tag{E10}
+\end{equation}
+
+\paragraph{(E) v3 energy (odd lift).} With
+$\mathcal O:=\{1,3,\dots,2R-1\}$ and, for $k\in\mathcal O$,
+$\varsigma_k:=(-1)^{(k+1)/2+1}=\operatorname{sign}\sin(\tfrac{k\pi}{2})$:
+\begin{align}
+&c_m^2+d_m^2\le s_m\quad(m=1,\dots,T), \tag{E11}\\
+&\tfrac{L}{2}\sum_{j=1}^N\alpha^{-}_{j,k}(w_j+v_j)\ \le\ A^{\mathrm{odd}}_k
+   \ \le\ \tfrac{L}{2}\sum_{j=1}^N\alpha^{+}_{j,k}(w_j+v_j),
+   \qquad
+   A^{\mathrm{odd}}_k\le \frac{4\varsigma_k}{k\pi}\,a_k-2\bigl(a_k^2+b_k^2\bigr)
+   \quad(k\in\mathcal O), \tag{E12}\\
+&\sum_{m=1}^{T} s_m^2
+  \ +\ \sum_{k\in\mathcal O} 4\,\bigl(A^{\mathrm{odd}}_k\bigr)^2
+  \ +\ \sum_{k\in\mathcal O}\frac{64}{\pi^2 k^2}\,b_k^2
+  \ \le\ 2\Omega-\tfrac12. \tag{E13}
+\end{align}
+
+\paragraph{(F) v4 even lift.} For even $k=2,4,\dots,R$ with $m=k/2\le T$:
+\begin{equation}
+\tfrac{L}{2}\sum_{j=1}^N\alpha^{-}_{j,k}(w_j+v_j)\le A^{\mathrm{even}}_k
+ \le \tfrac{L}{2}\sum_{j=1}^N\alpha^{+}_{j,k}(w_j+v_j),\qquad
+ A^{\mathrm{even}}_k\le-\tfrac12\bigl(c_m^2+d_m^2\bigr). \tag{E14}
+\end{equation}
+
+\paragraph{(G) Bochner Toeplitz on the lift $M$ (v4/v5).}
+Define the lifted coefficients
+\[
+ A_k=\begin{cases}\tfrac14,&k=0\\ A^{\mathrm{odd}}_k,&k\ \text{odd}\\ A^{\mathrm{even}}_k,&k\ \text{even}\end{cases}
+ \qquad
+ B_k=\begin{cases}0,&k\ \text{even}\\[2pt] -\dfrac{4\varsigma_k}{k\pi}\,b_k,&k\ \text{odd}\end{cases}
+ \quad(1\le k\le R),
+\]
+and the Hermitian Toeplitz $T^{M}\in\C^{(R+1)\times(R+1)}$ with
+$T^{M}_{kk}=\tfrac14$ and, for $k\ne l$,
+$T^{M}_{kl}=\tfrac12 A_{|k-l|}-\tfrac{i}{2}\sgn(k-l)\,B_{|k-l|}$. Then
+\begin{equation}
+ T^{M}\psdge \quad(\text{v4}),\qquad \Omega\,I-T^{M}\psdge \quad(\text{v5}). \tag{E15}
+\end{equation}
+
+\paragraph{(H) Bochner Toeplitz on $f$ (v6).}
+Let $T^{f}\in\C^{(R+1)\times(R+1)}$ be Hermitian Toeplitz with $T^{f}_{kk}=\tfrac14$
+and $T^{f}_{kl}=\tfrac12 a_{|k-l|}-\tfrac{i}{2}\sgn(k-l)\,b_{|k-l|}$ for $k\ne l$.
+Then
+\begin{equation}
+ T^{f}\psdge,\qquad I-T^{f}\psdge. \tag{E16}
+\end{equation}
+
+\subsection*{The new v7 constraint (Dirichlet-kernel Bochner sandwich)}
+Let $S\in\R^{(R+1)\times(R+1)}$ be the constant \emph{Dirichlet} matrix
+\[
+ S_{kl}=D(k-l),\qquad
+ D(j)=\begin{cases}0,& j=0,\\[2pt]\dfrac{\sin(j\pi/2)}{j\pi},& j\ne0.\end{cases}
+\]
+The two nonnegative completions on $[-2,2]$,
+$g_0=(1-f)\mathbf 1_{[-1,1]}$ and
+$f_{\mathrm{ext}}=f\,\mathbf 1_{[-1,1]}+\mathbf 1_{[-2,2]}-\mathbf 1_{[-1,1]}$,
+have Toeplitz matrices
+\[
+ T^{g_0}=\tfrac12 I+S-T^{f},\qquad
+ T^{f_{\mathrm{ext}}}=\tfrac12 I-S+T^{f},
+\]
+so the new LMIs are
+\begin{equation}
+\boxed{\ \tfrac12 I+S-T^{f}\psdge\quad\text{and}\quad \tfrac12 I-S+T^{f}\psdge.\ } \tag{E17$^{\star}$}
+\end{equation}
+Objective: $\min\ \Omega$.
+
+\paragraph{What is Lean-verified for v7 (\texttt{ErdosV7.lean}).}
+\begin{itemize}[nosep,leftmargin=1.4em]
+\item \texttt{dirichlet\_cos\_integral}: $\displaystyle\int_{-1}^{1}\cos\!\big(\tfrac{\pi k x}{2}\big)\,dx=\frac{4\sin(k\pi/2)}{k\pi}=4\,D(k)$ ($k\ne0$), and
+\texttt{dirichlet\_sin\_integral}: $\int_{-1}^{1}\sin(\tfrac{\pi kx}{2})\,dx=0$. Hence $\int_{-1}^1 e^{-i\pi kx/2}\,dx=4D(k)$ is real — the source of $S$.
+\item \texttt{sandwich\_g0}, \texttt{sandwich\_fext}: the entrywise identities
+$\hat g_0(k-l)=\big(\tfrac12\mathbf 1_{k=l}\big)+D(k-l)-\hat f(k-l)$ and
+$\hat f_{\mathrm{ext}}(k-l)=\big(\tfrac12\mathbf 1_{k=l}\big)-D(k-l)+\hat f(k-l)$,
+using $\hat f(0)=\tfrac14$ (diagonals $\tfrac14=\tfrac12-\tfrac14$ and $\tfrac34=\tfrac12+\tfrac14$). These fix the exact signs of (E17$^\star$).
+\item \texttt{g0\_nonneg}, \texttt{fext\_nonneg}: $g_0\ge0$ and $f_{\mathrm{ext}}\ge0$ on $[-2,2]$ (needs $0\le f\le1$).
+\item \texttt{bochner\_toeplitz\_form\_nonneg}: for any nonnegative atomic measure, the Toeplitz Hermitian form is a nonnegative sum of squared magnitudes, hence PSD — the mechanism giving (E17$^\star$).
+\end{itemize}
+
+%======================================================================
+\section*{Scope of the verification}
+The Lean proofs certify \textbf{soundness of each new constraint}: every
+admissible $f$ is feasible, so the added LMI never removes a true point and the
+program's optimum remains a \emph{valid lower bound}. They do \textbf{not}
+certify the numerical SDP solve (the reported values
+$C_{6.2}\gtrsim 1.2937$ and the overlap bound) — that is a separate
+floating-point/dual-certificate step. No sign, index, or factor error was found
+in either new constraint; the code matches the verified formulas above.
+
+\end{document}
