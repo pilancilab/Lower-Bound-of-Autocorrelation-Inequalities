@@ -1,0 +1,622 @@
+=== A6_zoom_R50: re-solving 61 failing cells at R=50 (keeping 39 R=10 verified) ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20724 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20724 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20725 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20724 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20725 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20725 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20724 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #20725 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21328 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21328 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21329 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21329 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21328 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21329 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21328 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21329 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21331 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21332 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21331 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21332 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21331 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21332 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21331 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/.local/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21332 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3802042031087992
+dual optimum   : None
+duality gap    : None
+max violation  : 4.5863585439462686e-11
+verified       : True
+  [1/61] h=[0.0144,0.0176] p=[0.0800,0.1200]  omega=0.38020  OK  (246.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38015987948284014
+dual optimum   : None
+duality gap    : None
+max violation  : 3.693583800924195e-11
+verified       : True
+  [2/61] h=[0.0144,0.0176] p=[0.0400,0.0800]  omega=0.38016  OK  (260.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3802574897761193
+dual optimum   : None
+duality gap    : None
+max violation  : 4.661664971706593e-11
+verified       : True
+  [3/61] h=[0.0144,0.0176] p=[0.1200,0.1600]  omega=0.38026  OK  (260.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38012609227533484
+dual optimum   : None
+duality gap    : None
+max violation  : 4.199323695331693e-11
+verified       : True
+  [4/61] h=[0.0144,0.0176] p=[0.0000,0.0400]  omega=0.38013  OK  (261.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38031908357153704
+dual optimum   : None
+duality gap    : None
+max violation  : 3.674060529036162e-11
+verified       : True
+  [5/61] h=[0.0144,0.0176] p=[0.1600,0.2000]  omega=0.38032  OK  (225.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3803932071316213
+dual optimum   : None
+duality gap    : None
+max violation  : 2.4427510302302626e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38048152746595415
+dual optimum   : None
+duality gap    : None
+max violation  : 4.2908948904027757e-11
+verified       : True
+  [6/61] h=[0.0144,0.0176] p=[0.2000,0.2400]  omega=0.38039  OK  (228.9s)
+  [7/61] h=[0.0144,0.0176] p=[0.2400,0.2800]  omega=0.38048  OK  (228.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3795301021520031
+dual optimum   : None
+duality gap    : None
+max violation  : 4.494065703909179e-11
+verified       : True
+  [8/61] h=[0.0176,0.0208] p=[0.0400,0.0800]  omega=0.37953  OK  (228.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.379501717570813
+dual optimum   : None
+duality gap    : None
+max violation  : 3.35361130632348e-11
+verified       : True
+  [9/61] h=[0.0176,0.0208] p=[0.0000,0.0400]  omega=0.37950  OK  (227.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37956729281004326
+dual optimum   : None
+duality gap    : None
+max violation  : 3.0182295839295893e-11
+verified       : True
+  [10/61] h=[0.0176,0.0208] p=[0.0800,0.1200]  omega=0.37957  OK  (226.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37966668642147633
+dual optimum   : None
+duality gap    : None
+max violation  : 2.602700861388009e-11
+verified       : True
+  [11/61] h=[0.0176,0.0208] p=[0.1600,0.2000]  omega=0.37967  OK  (226.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3796132674146036
+dual optimum   : None
+duality gap    : None
+max violation  : 3.198363269675021e-11
+verified       : True
+  [12/61] h=[0.0176,0.0208] p=[0.1200,0.1600]  omega=0.37961  OK  (229.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3801787746527784
+dual optimum   : None
+duality gap    : None
+max violation  : 4.2308262736554316e-11
+verified       : True
+  [13/61] h=[0.0176,0.0208] p=[0.2800,0.3200]  omega=0.38018  OK  (219.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3797322595765538
+dual optimum   : None
+duality gap    : None
+max violation  : 4.0357101281926834e-11
+verified       : True
+  [14/61] h=[0.0176,0.0208] p=[0.2000,0.2400]  omega=0.37973  OK  (235.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37981565618922775
+dual optimum   : None
+duality gap    : None
+max violation  : 4.168082019418741e-11
+verified       : True
+  [15/61] h=[0.0176,0.0208] p=[0.2400,0.2800]  omega=0.37982  OK  (227.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37894049023665205
+dual optimum   : None
+duality gap    : None
+max violation  : 4.3343157128958655e-11
+verified       : True
+  [16/61] h=[0.0208,0.0240] p=[0.0000,0.0400]  omega=0.37894  FAIL  (230.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3789647674001029
+dual optimum   : None
+duality gap    : None
+max violation  : 3.794680709546562e-11
+verified       : True
+  [17/61] h=[0.0208,0.0240] p=[0.0400,0.0800]  omega=0.37896  FAIL  (219.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378995331044102
+dual optimum   : None
+duality gap    : None
+max violation  : 3.348731876130252e-11
+verified       : True
+  [18/61] h=[0.0208,0.0240] p=[0.0800,0.1200]  omega=0.37900  FAIL  (230.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3790329529233344
+dual optimum   : None
+duality gap    : None
+max violation  : 4.6546761177665776e-11
+verified       : True
+  [19/61] h=[0.0208,0.0240] p=[0.1200,0.1600]  omega=0.37903  FAIL  (230.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37907742579263387
+dual optimum   : None
+duality gap    : None
+max violation  : 3.2411124072382127e-11
+verified       : True
+  [20/61] h=[0.0208,0.0240] p=[0.1600,0.2000]  omega=0.37908  FAIL  (234.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785845562935641
+dual optimum   : None
+duality gap    : None
+max violation  : 2.6289409825750245e-11
+verified       : True
+  [21/61] h=[0.0240,0.0272] p=[0.0000,0.0400]  omega=0.37858  FAIL  (176.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37920372540762504
+dual optimum   : None
+duality gap    : None
+max violation  : 4.952898675526264e-11
+verified       : True
+  [22/61] h=[0.0208,0.0240] p=[0.2400,0.2800]  omega=0.37920  FAIL  (226.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3796967313719327
+dual optimum   : None
+duality gap    : None
+max violation  : 3.445299074812148e-11
+verified       : True
+  [23/61] h=[0.0208,0.0240] p=[0.2800,0.3200]  omega=0.37970  OK  (226.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3791329145683993
+dual optimum   : None
+duality gap    : None
+max violation  : 4.3536502468697126e-11
+verified       : True
+  [24/61] h=[0.0208,0.0240] p=[0.2000,0.2400]  omega=0.37913  FAIL  (240.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37859544556515556
+dual optimum   : None
+duality gap    : None
+max violation  : 3.35343367063954e-11
+verified       : True
+  [25/61] h=[0.0240,0.0272] p=[0.0400,0.0800]  omega=0.37860  FAIL  (178.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786286717323372
+dual optimum   : None
+duality gap    : None
+max violation  : 4.355709710580392e-11
+verified       : True
+  [26/61] h=[0.0240,0.0272] p=[0.1200,0.1600]  omega=0.37863  FAIL  (229.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378609903930775
+dual optimum   : None
+duality gap    : None
+max violation  : 2.659422155716108e-11
+verified       : True
+  [27/61] h=[0.0240,0.0272] p=[0.0800,0.1200]  omega=0.37861  FAIL  (234.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37865239955712804
+dual optimum   : None
+duality gap    : None
+max violation  : 3.287036782651832e-11
+verified       : True
+  [28/61] h=[0.0240,0.0272] p=[0.1600,0.2000]  omega=0.37865  FAIL  (235.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37868557689164295
+dual optimum   : None
+duality gap    : None
+max violation  : 4.7275400548727266e-11
+verified       : True
+  [29/61] h=[0.0240,0.0272] p=[0.2000,0.2400]  omega=0.37869  FAIL  (232.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37873494938764946
+dual optimum   : None
+duality gap    : None
+max violation  : 5.101413209530371e-11
+verified       : True
+  [30/61] h=[0.0240,0.0272] p=[0.2400,0.2800]  omega=0.37873  FAIL  (222.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37856014902796487
+dual optimum   : None
+duality gap    : None
+max violation  : 3.1679265054549223e-11
+verified       : True
+  [31/61] h=[0.0272,0.0304] p=[0.0400,0.0800]  omega=0.37856  FAIL  (208.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37935285939433144
+dual optimum   : None
+duality gap    : None
+max violation  : 3.032368274148191e-11
+verified       : True
+  [32/61] h=[0.0240,0.0272] p=[0.2800,0.3200]  omega=0.37935  FAIL  (227.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785498672395411
+dual optimum   : None
+duality gap    : None
+max violation  : 2.1922569602992116e-11
+verified       : True
+  [33/61] h=[0.0272,0.0304] p=[0.0000,0.0400]  omega=0.37855  FAIL  (201.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37860846469560183
+dual optimum   : None
+duality gap    : None
+max violation  : 2.8408270468247356e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37857326389303014
+dual optimum   : None
+duality gap    : None
+max violation  : 3.3882891224976465e-11
+verified       : True
+  [34/61] h=[0.0272,0.0304] p=[0.1600,0.2000]  omega=0.37861  FAIL  (204.3s)
+  [35/61] h=[0.0272,0.0304] p=[0.0800,0.1200]  omega=0.37857  FAIL  (232.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37858934391087
+dual optimum   : None
+duality gap    : None
+max violation  : 3.4297281968917805e-11
+verified       : True
+  [36/61] h=[0.0272,0.0304] p=[0.1200,0.1600]  omega=0.37859  FAIL  (226.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378630379213273
+dual optimum   : None
+duality gap    : None
+max violation  : 3.916133557325431e-11
+verified       : True
+  [37/61] h=[0.0272,0.0304] p=[0.2000,0.2400]  omega=0.37863  FAIL  (194.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792845161720183
+dual optimum   : None
+duality gap    : None
+max violation  : 4.855976205476488e-11
+verified       : True
+  [38/61] h=[0.0272,0.0304] p=[0.2800,0.3200]  omega=0.37928  FAIL  (199.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37866518022024537
+dual optimum   : None
+duality gap    : None
+max violation  : 3.472699379059897e-11
+verified       : True
+  [39/61] h=[0.0272,0.0304] p=[0.2400,0.2800]  omega=0.37867  FAIL  (205.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37867702060503455
+dual optimum   : None
+duality gap    : None
+max violation  : 9.935713650719226e-12
+verified       : True
+  [40/61] h=[0.0304,0.0336] p=[0.0400,0.0800]  omega=0.37868  FAIL  (234.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786732542597527
+dual optimum   : None
+duality gap    : None
+max violation  : 1.0816287042700669e-11
+verified       : True
+  [41/61] h=[0.0304,0.0336] p=[0.0000,0.0400]  omega=0.37867  FAIL  (195.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37868753740656547
+dual optimum   : None
+duality gap    : None
+max violation  : 2.9829300428616325e-11
+verified       : True
+  [42/61] h=[0.0304,0.0336] p=[0.1200,0.1600]  omega=0.37869  FAIL  (197.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786815690282316
+dual optimum   : None
+duality gap    : None
+max violation  : 2.1480700839191304e-11
+verified       : True
+  [43/61] h=[0.0304,0.0336] p=[0.0800,0.1200]  omega=0.37868  FAIL  (229.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786949182478017
+dual optimum   : None
+duality gap    : None
+max violation  : 3.0571540031729473e-11
+verified       : True
+  [44/61] h=[0.0304,0.0336] p=[0.1600,0.2000]  omega=0.37869  FAIL  (218.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3787039604311874
+dual optimum   : None
+duality gap    : None
+max violation  : 2.7134456080943682e-11
+verified       : True
+  [45/61] h=[0.0304,0.0336] p=[0.2000,0.2400]  omega=0.37870  FAIL  (189.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37940194849658454
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7567553255446246e-11
+verified       : True
+  [46/61] h=[0.0304,0.0336] p=[0.2800,0.3200]  omega=0.37940  FAIL  (200.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3787411826005086
+dual optimum   : None
+duality gap    : None
+max violation  : 3.4093833599655245e-11
+verified       : True
+  [47/61] h=[0.0304,0.0336] p=[0.2400,0.2800]  omega=0.37874  FAIL  (231.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37899977345184466
+dual optimum   : None
+duality gap    : None
+max violation  : 1.5789539220632104e-12
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37900199511351673
+dual optimum   : None
+duality gap    : None
+max violation  : 5.377312584185074e-13
+verified       : True
+  [48/61] h=[0.0336,0.0368] p=[0.0000,0.0400]  omega=0.37900  FAIL  (231.4s)
+  [49/61] h=[0.0336,0.0368] p=[0.0400,0.0800]  omega=0.37900  FAIL  (209.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37900470915352263
+dual optimum   : None
+duality gap    : None
+max violation  : 6.666362907005346e-14
+verified       : True
+  [50/61] h=[0.0336,0.0368] p=[0.0800,0.1200]  omega=0.37900  FAIL  (170.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3790077755222879
+dual optimum   : None
+duality gap    : None
+max violation  : 1.144961376709809e-11
+verified       : True
+  [51/61] h=[0.0336,0.0368] p=[0.1200,0.1600]  omega=0.37901  FAIL  (243.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37907648990207127
+dual optimum   : None
+duality gap    : None
+max violation  : 2.775223968299635e-11
+verified       : True
+  [52/61] h=[0.0336,0.0368] p=[0.2400,0.2800]  omega=0.37908  FAIL  (214.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37901160981624155
+dual optimum   : None
+duality gap    : None
+max violation  : 2.1119878356188128e-11
+verified       : True
+  [53/61] h=[0.0336,0.0368] p=[0.1600,0.2000]  omega=0.37901  FAIL  (236.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3790162650337134
+dual optimum   : None
+duality gap    : None
+max violation  : 2.2604857162775506e-11
+verified       : True
+  [54/61] h=[0.0336,0.0368] p=[0.2000,0.2400]  omega=0.37902  FAIL  (177.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3794492728240414
+dual optimum   : None
+duality gap    : None
+max violation  : 5.06422969124078e-13
+verified       : True
+  [55/61] h=[0.0368,0.0400] p=[0.0000,0.0400]  omega=0.37945  FAIL  (212.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3794510581195794
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [56/61] h=[0.0368,0.0400] p=[0.0800,0.1200]  omega=0.37945  FAIL  (206.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37945224558827245
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [57/61] h=[0.0368,0.0400] p=[0.1200,0.1600]  omega=0.37945  FAIL  (170.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3794501586391442
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [58/61] h=[0.0368,0.0400] p=[0.0400,0.0800]  omega=0.37945  FAIL  (227.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37953579288546496
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [59/61] h=[0.0368,0.0400] p=[0.2400,0.2800]  omega=0.37954  OK  (160.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37945480639428103
+dual optimum   : None
+duality gap    : None
+max violation  : 4.344805171283678e-13
+verified       : True
+  [60/61] h=[0.0368,0.0400] p=[0.2000,0.2400]  omega=0.37945  FAIL  (181.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3794533800383739
+dual optimum   : None
+duality gap    : None
+max violation  : 5.670411462686115e-13
+verified       : True
+  [61/61] h=[0.0368,0.0400] p=[0.1600,0.2000]  omega=0.37945  FAIL  (189.4s)
+
+=== A6_zoom_R50: wall=3377.2s ===
+  verified pass:  56  (incl 39 from R=10)
+  infeasible:     0
+  threshold-fail: 44
+  solver-err:     0
+  TOTAL cells:    100
+  saved /home/sykim/Theory_Harness/Convex_Problems_Verified/bnb/table2_rows_state/A6_zoom_R50.json

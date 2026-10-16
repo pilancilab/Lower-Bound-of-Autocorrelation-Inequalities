@@ -1,0 +1,1388 @@
+
+=== A6_1: 100 cells | N=10000 T=2000 R=10 | q=(-1.0, -0.525) | workers=8 ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [3/100] 0.0,0.008,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [4/100] 0.0,0.008,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [5/100] 0.0,0.008,0.4,0.5  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [6/100] 0.0,0.008,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [11/100] 0.008,0.016,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [12/100] 0.008,0.016,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [14/100] 0.008,0.016,0.30000000000000004,0.4  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [15/100] 0.008,0.016,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [16/100] 0.008,0.016,0.4,0.5  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [18/100] 0.008,0.016,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [22/100] 0.016,0.024,0.30000000000000004,0.4  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [23/100] 0.016,0.024,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [25/100] 0.016,0.024,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [26/100] 0.016,0.024,0.4,0.5  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [28/100] 0.016,0.024,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [31/100] 0.024,0.032,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [32/100] 0.024,0.032,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [36/100] 0.024,0.032,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [41/100] 0.032,0.04,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [42/100] 0.032,0.04,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [48/100] 0.032,0.04,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [51/100] 0.04,0.048,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [52/100] 0.04,0.048,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [53/100] 0.04,0.048,0.30000000000000004,0.4  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [54/100] 0.04,0.048,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [55/100] 0.04,0.048,0.2,0.30000000000000004  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [58/100] 0.04,0.048,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [61/100] 0.048,0.056,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [62/100] 0.048,0.056,0.2,0.30000000000000004  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [65/100] 0.048,0.056,0.4,0.5  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [66/100] 0.048,0.056,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [67/100] 0.048,0.056,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [71/100] 0.056,0.064,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [72/100] 0.056,0.064,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [73/100] 0.056,0.064,0.2,0.30000000000000004  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [76/100] 0.056,0.064,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [81/100] 0.064,0.07200000000000001,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [82/100] 0.064,0.07200000000000001,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [83/100] 0.064,0.07200000000000001,0.2,0.30000000000000004  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [84/100] 0.064,0.07200000000000001,0.30000000000000004,0.4  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [86/100] 0.064,0.07200000000000001,0.4,0.5  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [87/100] 0.064,0.07200000000000001,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [88/100] 0.064,0.07200000000000001,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [91/100] 0.07200000000000001,0.08,0.0,0.1  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [92/100] 0.07200000000000001,0.08,0.1,0.2  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [93/100] 0.07200000000000001,0.08,0.5,0.6000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+  [94/100] 0.07200000000000001,0.08,0.30000000000000004,0.4  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [97/100] 0.07200000000000001,0.08,0.6000000000000001,0.7000000000000001  ERROR Solver 'MOSEK' failed. Try another solver, or solve with verbose=True for more information.
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+  A6_1: {'verified': 52, 'failed': 48}  wall=398.8s
+  saved /home/sykim/Theory_Harness/Convex_Problems_Verified/bnb/table2_rows_state/A6_1.json
+
+=== A6_2: 100 cells | N=10000 T=2000 R=10 | q=(-0.525, -0.05) | workers=8 ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38160660555591336
+dual optimum   : None
+duality gap    : None
+max violation  : 1.05851599995219e-10
+verified       : True
+  [1/100] h=[0.0000,0.0080] p=[0.3000,0.4000] omega=0.38161 OK (34.1s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38105503433928134
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9936640700436194e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38096290371454183
+dual optimum   : None
+duality gap    : None
+max violation  : 2.413293401326653e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38119567185768816
+dual optimum   : None
+duality gap    : None
+max violation  : 2.317907479942958e-10
+verified       : True
+  [3/100] h=[0.0000,0.0080] p=[0.1000,0.2000] omega=0.38106 OK (44.2s)
+  [4/100] h=[0.0000,0.0080] p=[0.0000,0.1000] omega=0.38096 OK (44.2s)
+  [5/100] h=[0.0000,0.0080] p=[0.2000,0.3000] omega=0.38120 OK (44.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3882757192115627
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6739686887646578e-10
+verified       : True
+  [6/100] h=[0.0000,0.0080] p=[0.4000,0.5000] omega=0.38828 OK (45.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.40980556843291305
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3768330393460794e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4670918015654942
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9388246563778466e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3796260780655555
+dual optimum   : None
+duality gap    : None
+max violation  : 1.824685350138109e-10
+verified       : True
+  [11/100] h=[0.0080,0.0160] p=[0.2000,0.3000] omega=0.37963 OK (34.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37949981958274265
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0484852176650727e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37941055132574164
+dual optimum   : None
+duality gap    : None
+max violation  : 2.620529851549234e-10
+verified       : True
+  [12/100] h=[0.0080,0.0160] p=[0.1000,0.2000] omega=0.37950 FAIL (36.1s)
+  [13/100] h=[0.0080,0.0160] p=[0.0000,0.1000] omega=0.37941 FAIL (36.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3803598481048272
+dual optimum   : None
+duality gap    : None
+max violation  : 1.2750294737685387e-10
+verified       : True
+  [14/100] h=[0.0080,0.0160] p=[0.3000,0.4000] omega=0.38036 OK (35.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3874556656486264
+dual optimum   : None
+duality gap    : None
+max violation  : 2.58381477612488e-10
+verified       : True
+  [15/100] h=[0.0080,0.0160] p=[0.4000,0.5000] omega=0.38746 OK (35.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.40862301913504195
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8325235246919626e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4645590564136234
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6095113604009704e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782242446991334
+dual optimum   : None
+duality gap    : None
+max violation  : 9.404021479198811e-11
+verified       : True
+  [21/100] h=[0.0160,0.0240] p=[0.0000,0.1000] omega=0.37822 FAIL (33.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37836120032005616
+dual optimum   : None
+duality gap    : None
+max violation  : 1.2028344460347264e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782832579575136
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5086432404620475e-10
+verified       : True
+  [22/100] h=[0.0160,0.0240] p=[0.2000,0.3000] omega=0.37836 FAIL (33.9s)
+  [23/100] h=[0.0160,0.0240] p=[0.1000,0.2000] omega=0.37828 FAIL (34.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3795114005986106
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8506140537667172e-10
+verified       : True
+  [24/100] h=[0.0160,0.0240] p=[0.3000,0.4000] omega=0.37951 OK (35.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3869996940611221
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0978124266491684e-10
+verified       : True
+  [25/100] h=[0.0160,0.0240] p=[0.4000,0.5000] omega=0.38700 OK (33.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.40783003932873907
+dual optimum   : None
+duality gap    : None
+max violation  : 1.928203100065671e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.46236211544805667
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5875456805991327e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37809878747269926
+dual optimum   : None
+duality gap    : None
+max violation  : 1.944142016918702e-10
+verified       : True
+  [31/100] h=[0.0240,0.0320] p=[0.0000,0.1000] omega=0.37810 FAIL (30.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37814293093400203
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5131679543989073e-10
+verified       : True
+  [32/100] h=[0.0240,0.0320] p=[0.1000,0.2000] omega=0.37814 FAIL (30.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37819999256757797
+dual optimum   : None
+duality gap    : None
+max violation  : 1.5147360616808193e-10
+verified       : True
+  [33/100] h=[0.0240,0.0320] p=[0.2000,0.3000] omega=0.37820 FAIL (30.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37939374944960963
+dual optimum   : None
+duality gap    : None
+max violation  : 1.0470573881150337e-10
+verified       : True
+  [34/100] h=[0.0240,0.0320] p=[0.3000,0.4000] omega=0.37939 FAIL (30.4s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3868995121334555
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4879846827909639e-10
+verified       : True
+  [36/100] h=[0.0240,0.0320] p=[0.4000,0.5000] omega=0.38690 OK (30.9s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.40750423290443344
+dual optimum   : None
+duality gap    : None
+max violation  : 1.38686445948508e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4604634726415996
+dual optimum   : None
+duality gap    : None
+max violation  : 2.437545113076565e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785146040025414
+dual optimum   : None
+duality gap    : None
+max violation  : 4.0121067866891526e-11
+verified       : True
+  [41/100] h=[0.0320,0.0400] p=[0.0000,0.1000] omega=0.37851 FAIL (31.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785299205199618
+dual optimum   : None
+duality gap    : None
+max violation  : 7.991096146909606e-11
+verified       : True
+  [42/100] h=[0.0320,0.0400] p=[0.1000,0.2000] omega=0.37853 FAIL (30.6s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3800397544572571
+dual optimum   : None
+duality gap    : None
+max violation  : 8.976879823819651e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785472518060393
+dual optimum   : None
+duality gap    : None
+max violation  : 7.176747558347053e-11
+verified       : True
+  [44/100] h=[0.0320,0.0400] p=[0.3000,0.4000] omega=0.38004 OK (32.9s)
+  [45/100] h=[0.0320,0.0400] p=[0.2000,0.3000] omega=0.37855 FAIL (33.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4075214525430729
+dual optimum   : None
+duality gap    : None
+max violation  : 5.41582918401652e-12
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3869821903046853
+dual optimum   : None
+duality gap    : None
+max violation  : 8.721933759559854e-11
+verified       : True
+  [47/100] h=[0.0320,0.0400] p=[0.4000,0.5000] omega=0.38698 OK (34.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4591191258701493
+dual optimum   : None
+duality gap    : None
+max violation  : 2.156695880317725e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3796502370654509
+dual optimum   : None
+duality gap    : None
+max violation  : 2.947946915355694e-11
+verified       : True
+  [51/100] h=[0.0400,0.0480] p=[0.0000,0.1000] omega=0.37965 OK (33.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37966059151320625
+dual optimum   : None
+duality gap    : None
+max violation  : 4.2750853145321134e-11
+verified       : True
+  [52/100] h=[0.0400,0.0480] p=[0.1000,0.2000] omega=0.37966 OK (36.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37967241041658023
+dual optimum   : None
+duality gap    : None
+max violation  : 3.342109395788363e-11
+verified       : True
+  [53/100] h=[0.0400,0.0480] p=[0.2000,0.3000] omega=0.37967 OK (37.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3815435028775555
+dual optimum   : None
+duality gap    : None
+max violation  : 2.3893382005155463e-11
+verified       : True
+  [54/100] h=[0.0400,0.0480] p=[0.3000,0.4000] omega=0.38154 OK (35.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3884375320457725
+dual optimum   : None
+duality gap    : None
+max violation  : 3.172500624316378e-11
+verified       : True
+  [55/100] h=[0.0400,0.0480] p=[0.4000,0.5000] omega=0.38844 OK (36.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4091389674366675
+dual optimum   : None
+duality gap    : None
+max violation  : 3.402883004156344e-11
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4590694430019194
+dual optimum   : None
+duality gap    : None
+max violation  : 2.6107138146770105e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38082914998114675
+dual optimum   : None
+duality gap    : None
+max violation  : 2.808491801232528e-11
+verified       : True
+  [61/100] h=[0.0480,0.0560] p=[0.0000,0.1000] omega=0.38083 OK (29.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3808397754933982
+dual optimum   : None
+duality gap    : None
+max violation  : 3.4352015964031825e-11
+verified       : True
+  [62/100] h=[0.0480,0.0560] p=[0.1000,0.2000] omega=0.38084 OK (30.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3808884253375868
+dual optimum   : None
+duality gap    : None
+max violation  : 5.84978124373945e-11
+verified       : True
+  [63/100] h=[0.0480,0.0560] p=[0.2000,0.3000] omega=0.38089 OK (31.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3834932385147504
+dual optimum   : None
+duality gap    : None
+max violation  : 3.0266617278016174e-11
+verified       : True
+  [64/100] h=[0.0480,0.0560] p=[0.3000,0.4000] omega=0.38349 OK (31.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.39045331073297446
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0521856723973788e-11
+verified       : True
+  [65/100] h=[0.0480,0.0560] p=[0.4000,0.5000] omega=0.39045 OK (30.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4112482900653382
+dual optimum   : None
+duality gap    : None
+max violation  : 4.04836667067341e-11
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4599387234273176
+dual optimum   : None
+duality gap    : None
+max violation  : 1.567820820491759e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3820188332888204
+dual optimum   : None
+duality gap    : None
+max violation  : 1.0975048121309762e-10
+verified       : True
+  [71/100] h=[0.0560,0.0640] p=[0.1000,0.2000] omega=0.38202 OK (31.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38200774336599536
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6241607532108994e-10
+verified       : True
+  [72/100] h=[0.0560,0.0640] p=[0.0000,0.1000] omega=0.38201 OK (32.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38227826876570575
+dual optimum   : None
+duality gap    : None
+max violation  : 1.2387252622545266e-11
+verified       : True
+  [73/100] h=[0.0560,0.0640] p=[0.2000,0.3000] omega=0.38228 OK (32.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3854905065203538
+dual optimum   : None
+duality gap    : None
+max violation  : 2.8761043834322e-11
+verified       : True
+  [74/100] h=[0.0560,0.0640] p=[0.3000,0.4000] omega=0.38549 OK (30.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.39259594467812203
+dual optimum   : None
+duality gap    : None
+max violation  : 1.579630344195927e-11
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [75/100] h=[0.0560,0.0640] p=[0.4000,0.5000] omega=0.39260 OK (32.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4135629710916491
+dual optimum   : None
+duality gap    : None
+max violation  : 6.122274382903449e-11
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4621724554480133
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3703210261951405e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3832207002025399
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9355144737943398e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38320725477730727
+dual optimum   : None
+duality gap    : None
+max violation  : 1.775995409170148e-10
+verified       : True
+  [81/100] h=[0.0640,0.0720] p=[0.1000,0.2000] omega=0.38322 OK (30.6s)
+  [82/100] h=[0.0640,0.0720] p=[0.0000,0.1000] omega=0.38321 OK (31.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38390534520347847
+dual optimum   : None
+duality gap    : None
+max violation  : 2.990357434896375e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3874907471919647
+dual optimum   : None
+duality gap    : None
+max violation  : 2.544713912811837e-11
+verified       : True
+  [83/100] h=[0.0640,0.0720] p=[0.2000,0.3000] omega=0.38391 OK (33.5s)
+  [84/100] h=[0.0640,0.0720] p=[0.3000,0.4000] omega=0.38749 OK (33.2s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.39480783562323946
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3339601933068725e-11
+verified       : True
+  [86/100] h=[0.0640,0.0720] p=[0.4000,0.5000] omega=0.39481 OK (32.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.41607736833138925
+dual optimum   : None
+duality gap    : None
+max violation  : 7.603545044588579e-11
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.46569825690911987
+dual optimum   : None
+duality gap    : None
+max violation  : 2.156484382831534e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38443882890836706
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7002043690595749e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3844209897203502
+dual optimum   : None
+duality gap    : None
+max violation  : 1.730047163961499e-10
+verified       : True
+  [91/100] h=[0.0720,0.0800] p=[0.1000,0.2000] omega=0.38444 OK (32.0s)
+  [92/100] h=[0.0720,0.0800] p=[0.0000,0.1000] omega=0.38442 OK (32.4s)
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38574099966215725
+dual optimum   : None
+duality gap    : None
+max violation  : 2.4460039836924143e-11
+verified       : True
+  [94/100] h=[0.0720,0.0800] p=[0.2000,0.3000] omega=0.38574 OK (33.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3894844761167557
+dual optimum   : None
+duality gap    : None
+max violation  : 3.698779644679441e-11
+verified       : True
+  [95/100] h=[0.0720,0.0800] p=[0.3000,0.4000] omega=0.38948 OK (33.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.39702659939229923
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1539597343243959e-11
+verified       : True
+  [96/100] h=[0.0720,0.0800] p=[0.4000,0.5000] omega=0.39703 OK (34.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.4186738177725341
+dual optimum   : None
+duality gap    : None
+max violation  : 4.6710463562646755e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.46962999321459953
+dual optimum   : None
+duality gap    : None
+max violation  : 2.409912772216669e-10
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : infeasible
+primal optimum : inf
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+  A6_2: {'verified': 88, 'failed': 12}  wall=425.1s
+  saved /home/sykim/Theory_Harness/Convex_Problems_Verified/bnb/table2_rows_state/A6_2.json

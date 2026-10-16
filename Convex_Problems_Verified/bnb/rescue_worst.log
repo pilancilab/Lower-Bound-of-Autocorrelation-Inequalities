@@ -1,0 +1,128 @@
+=== rescue probe on worst cell ===
+  parent: h=[0.0272,0.0304] p=[0.0,0.04]  R=100 Ω≈0.378623
+  running 9 jobs in parallel (4 workers)
+
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #21425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #22632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786231629806389
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1224857254885773e-12
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37864073238261836
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786231625455418
+dual optimum   : None
+duality gap    : None
+max violation  : 8.181180832875907e-13
+verified       : True
+  [split_p_L         ] N=10000 T=2000 R=100  h=(0.0272, 0.0304) p=(0.0, 0.02)  Ω=0.378623  FAIL  (1020s)
+  [split_h_L         ] N=10000 T=2000 R=100  h=(0.0272, 0.0288) p=(0.0, 0.04)  Ω=0.378641  FAIL  (1020s)
+  [baseline          ] N=10000 T=2000 R=100  h=(0.0272, 0.0304) p=(0.0, 0.04)  Ω=0.378623  FAIL  (1020s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786287846464621
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+  [split_h_R         ] N=10000 T=2000 R=100  h=(0.0288, 0.0304) p=(0.0, 0.04)  Ω=0.378629  FAIL  (1022s)
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #41424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #41425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #41424 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #41425 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42628 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42629 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42631 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/sykim/MUON_STATE_QUANTIZATION_DISCOVERY/modded-nanogpt/nvfp4/lib/python3.10/site-packages/cvxpy/problems/problem.py:173: UserWarning: Constraint #42632 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "

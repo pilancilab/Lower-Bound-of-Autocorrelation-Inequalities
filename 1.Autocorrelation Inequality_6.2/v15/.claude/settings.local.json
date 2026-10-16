@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import cvxpy, mosek; print\\(cvxpy.__version__, 'MOSEK ok'\\)\")",
+      "Bash(python3 -c \"import cvxpy, mosek; print\\(cvxpy.__version__, 'MOSEK ok'\\)\")",
+      "Bash(python3 -u -c ':*)",
+      "Bash(tee /tmp/v15_large.log)"
+    ]
+  }
+}

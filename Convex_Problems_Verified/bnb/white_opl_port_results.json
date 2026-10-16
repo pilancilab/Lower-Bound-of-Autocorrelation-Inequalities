@@ -1,0 +1,60 @@
+{
+ "threshold": 0.38,
+ "results": [
+  {
+   "label": "A9",
+   "N": 10000,
+   "T": 4000,
+   "R": 10,
+   "ok": true,
+   "status": "optimal",
+   "omega": 0.3747994065696754,
+   "max_violation": 3.6685876558806285e-11,
+   "elapsed_s": 8.505899906158447
+  },
+  {
+   "label": "A7",
+   "N": 10000,
+   "T": 4000,
+   "R": 10,
+   "ok": true,
+   "status": "optimal",
+   "omega": 0.3740262352222752,
+   "max_violation": 3.6094016664378614e-11,
+   "elapsed_s": 8.695354700088501
+  },
+  {
+   "label": "A6",
+   "N": 10000,
+   "T": 4000,
+   "R": 10,
+   "ok": true,
+   "status": "optimal",
+   "omega": 0.37773452231919974,
+   "max_violation": 4.109679263564203e-11,
+   "elapsed_s": 9.011433362960815
+  },
+  {
+   "label": "B1",
+   "N": 20000,
+   "T": 5000,
+   "R": 10,
+   "ok": true,
+   "status": "optimal",
+   "omega": 0.37527173165811817,
+   "max_violation": 2.777666985309679e-11,
+   "elapsed_s": 15.9215669631958
+  },
+  {
+   "label": "B2",
+   "N": 20000,
+   "T": 5000,
+   "R": 10,
+   "ok": true,
+   "status": "optimal",
+   "omega": 0.3758425877654338,
+   "max_violation": 3.6977643169677776e-11,
+   "elapsed_s": 9.643879413604736
+  }
+ ]
+}

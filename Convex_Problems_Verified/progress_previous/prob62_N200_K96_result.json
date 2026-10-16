@@ -1,0 +1,36 @@
+{
+  "label": "prob6.2_N200_K96",
+  "problem": "autocorrelation_inequality_v51v",
+  "N": 200,
+  "K": 96,
+  "config": {
+    "margin": 1e-08,
+    "solver_eps": 1e-10,
+    "eps_A": 1e-12,
+    "eps_b": 1e-12,
+    "eps_c": 1e-12,
+    "dps": 60
+  },
+  "certified_lower_bound": 1.2937368333,
+  "valid": true,
+  "residual_float_ub": 3.821e-10,
+  "y_l1_ub": 634.1,
+  "X_used": 7079.7,
+  "timing_seconds": {
+    "build": 2.7,
+    "X_bound": 0.0,
+    "canonicalize": 46.9,
+    "dual_solve_margin": 1649.3,
+    "audit_and_assemble": 5.0,
+    "total": 1704.0
+  },
+  "method": "strict_cone_margin",
+  "api": "dual_certification_api.scs_data_from_problem + certified_bound.solve_dual_with_margin + certified_bound.certified_lower_bound",
+  "model": "AutocorrLowerBoundV51v (with localized Bochner restored)",
+  "comparison_old_pipeline": {
+    "old_L": 1.2937480108,
+    "old_wall_seconds": 6952.0,
+    "old_margin": 1e-10
+  },
+  "date": "2026-05-25"
+}

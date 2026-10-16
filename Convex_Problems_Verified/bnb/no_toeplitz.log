@@ -1,0 +1,64 @@
+=== 5 rows, use_toeplitz=False (4 workers x 8 threads) ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:270: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:270: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:270: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:270: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:280: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:280: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:280: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:280: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3777345762766273
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3747982433652361
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37402444921121525
+dual optimum   : None
+duality gap    : None
+max violation  : 0.0
+verified       : True
+    A6  N=10000  omega=0.377735  (with-toeplitz 0.380138, Δ=-0.002403)  mv=0.0e+00  FAIL  (37.4s)
+    A9  N=10000  omega=0.374798  (with-toeplitz 0.378908, Δ=-0.004110)  mv=0.0e+00  FAIL  (37.5s)
+    A7  N=10000  omega=0.374024  (with-toeplitz 0.375303, Δ=-0.001279)  mv=0.0e+00  FAIL  (37.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37527145150573227
+dual optimum   : None
+duality gap    : None
+max violation  : 4.739513810193309e-11
+verified       : True
+    B1  N=20000  omega=0.375271  (with-toeplitz 0.377430, Δ=-0.002159)  mv=4.7e-11  FAIL  (104.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3758408524071678
+dual optimum   : None
+duality gap    : None
+max violation  : 4.784966340821463e-11
+verified       : True
+    B2  N=20000  omega=0.375841  (with-toeplitz 0.379877, Δ=-0.004036)  mv=4.8e-11  FAIL  (87.8s)
+Wall: 125.8s
+saved /home/sykim/Theory_Harness/Convex_Problems_Verified/bnb/fails_no_toeplitz_results.json

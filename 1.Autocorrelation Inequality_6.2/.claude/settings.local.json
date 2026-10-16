@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/sykim/Theory_Harness/**)",
+      "Bash(*)"
+    ]
+  }
+}

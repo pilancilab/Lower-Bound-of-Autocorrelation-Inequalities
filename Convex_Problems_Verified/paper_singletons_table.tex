@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\begin{table}[h]
+\centering
+\caption{Certified lower bounds on $\Omega$ for the twelve single-cell paper rows
+(A1--A5, A8, A10--A15), each verified at $(N, T, R) = (10000, 4000, 10)$
+via dual certification.}
+\label{tab:paper-singletons}
+\begin{tabular}{l cc cc cc r}
+\toprule
+Cell & $h_1$ & $h_2$ & $p_1$ & $p_2$ & $q_1$ & $q_2$ & $\Omega \;\ge$ \\
+\midrule
+A1  & 0.75 & 2.00 & 0.00 & 1.00 & $-1.000$ & $1.000$ & 0.461948 \\
+A2  & 0.40 & 0.75 & 0.00 & 1.00 & $-1.000$ & $1.000$ & 0.409417 \\
+A3  & 0.20 & 0.40 & 0.00 & 1.00 & $-1.000$ & $1.000$ & 0.398605 \\
+A4  & 0.10 & 0.20 & 0.00 & 1.00 & $-1.000$ & $1.000$ & 0.385800 \\
+A5  & 0.08 & 0.10 & 0.00 & 1.00 & $-1.000$ & $1.000$ & 0.385068 \\
+A8  & 0.00 & 0.08 & 0.00 & 1.00 & $\phantom{-}0.050$ & $1.000$ & 0.381533 \\
+A10 & 0.00 & 0.08 & 0.00 & 0.25 & $-0.025$ & $0.025$ & 0.398928 \\
+A11 & 0.00 & 0.08 & 0.25 & 0.30 & $-0.025$ & $0.025$ & 0.389547 \\
+A12 & 0.00 & 0.08 & 0.30 & 0.33 & $-0.025$ & $0.025$ & 0.383319 \\
+A13 & 0.00 & 0.08 & 0.50 & 1.00 & $-0.025$ & $0.025$ & 0.397131 \\
+A14 & 0.00 & 0.08 & 0.45 & 0.50 & $-0.025$ & $0.025$ & 0.386126 \\
+A15 & 0.06 & 0.08 & 0.33 & 0.45 & $-0.025$ & $0.025$ & 0.390070 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

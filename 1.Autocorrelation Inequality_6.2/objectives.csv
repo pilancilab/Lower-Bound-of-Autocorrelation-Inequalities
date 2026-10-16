@@ -1,0 +1,53 @@
+version,version_num,Omega,N,K,n_tests,status,notes
+v0,0,,,,,no-verdict,baseline code only
+v1,1,,,,,VALID,validity proof only (no run)
+v2,2,,,,,VALID,validity proof only (no run)
+v3,3,,,,,INVALID,inherits v0 band issue
+v4,4,,,,,INVALID,depends on unresolved v0
+v5,5,,,,,INVALID,even-restricted; depends on v0
+v6,6,,,,,INVALID,depends on v0
+v7,7,1.344,20,,,INVALID,bounds C^even only
+v8,8,,,,,INVALID,LP constraint excludes admissible f
+v9,9,1.689,50,64,,INVALID,Fejer kernel
+v10,10,,,,,VALID,references v9's 1.689
+v11,11,1.376,8,16,,INVALID,shifted-W family
+v12,12,,,,,VALID,bounds C^even not C_6.2
+v13,13,,,,,VALID,structural no run
+v14,14,1.063,16,16,,VALID,first non-even rigorous
+v15,15,1.033,8,8,,VALID,identical to v14
+v16,16,1.033,8,8,,VALID,identical to v14
+v17,17,1.111,100,32,,VALID,parameter sweep
+v18,18,1.033,8,8,,VALID,identical to v14
+v19,19,1.063,16,16,,VALID,matches v14
+v20,20,,,,,VALID,Lasserre level-2 no improvement
+v21,21,1.068,16,16,,VALID,+0.005 over v14
+v22,22,1.124,32,32,,INVALID,LP not certifiably <= C_6.2
+v23,23,,,,,VALID,reproduces v14/v17 plateau
+v24,24,1.06,16,16,,VALID-vacuous,M_inf doesn't bind
+v25,25,1.11,50,64,,VALID,matches v17 plateau
+v26,26,,,,,meta,analysis of v14 LP
+v27,27,,,,,VALID-tautology,Omega^(27)=Omega^(14)
+v28,28,,,,,meta-summary,
+v29,29,,,,,meta,references v14's 1.063
+v30,30,1.217,50,32,51,VALID,multi-point Fejer
+v31,31,1.267,2000,32,,VALID,N-sweep of v30
+v32,32,1.147,16,16,,VALID,identical to v30
+v33,33,1.2816,1000,64,101,VALID,first SOTA-exceeding
+v34,34,1.2842,2000,64,,VALID,
+v35,35,1.2851,3000,64,,VALID,
+v36,36,1.147,16,16,33,VALID,identical to v30
+v37,37,1.2859,5000,64,101,VALID,
+v38,38,,,,,meta,quotes v35's 1.2851
+v39,39,,,,,meta,quotes v35's 1.2851
+v40,40,1.143,16,32,,INVALID,Omega decreased -> loosened constraint
+v41,41,,,,,meta,quotes v37's 1.2859
+v42,42,1.2864,10000,64,101,VALID,
+v43,43,1.2860,1000,96,101,VALID,quotes v42 as best
+v44,44,1.2927,7000,96,,VALID,K=96 breakthrough
+v45,45,1.2871,1000,96,,VALID,localized Bochner
+v46,46,1.216720,50,32,,VALID,extended Bochner; sanity sweep (matches v30 - constraint not binding at small N)
+v47,47,1.216720,50,32,,VALID,trig Cauchy-Schwarz; sanity sweep (matches v30 - constraint not binding at small N)
+v48,48,,,,,meta,quotes v44's 1.2913
+v49,49,,,,,VALID-empty,v45 at larger K no new Omega
+v50,50,,,,,INVALID-tightening,Gram tautologically redundant
+v51,51,1.2937,200,96,,VALID,current best

@@ -1,0 +1,10 @@
+{
+  "N": 200,
+  "K": 96,
+  "certified_lower_bound": 1.293736833333943,
+  "valid": true,
+  "method": "strict_cone_margin",
+  "margin": 1e-08,
+  "solver_eps": 1e-10,
+  "elapsed_s": 2468.9751465320587
+}

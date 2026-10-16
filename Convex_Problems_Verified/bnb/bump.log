@@ -1,0 +1,87 @@
+=== Batch 1: 3 jobs at N=20000, T=5000  (4 workers x 8 threads) ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:284: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:284: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:294: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:284: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:294: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:294: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37685385146617156
+dual optimum   : None
+duality gap    : None
+max violation  : 1.723774403872367e-10
+verified       : True
+    A9  N=20000 T= 5000  omega=0.376854  mv=1.7e-10  FAIL  (113.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37503399578942637
+dual optimum   : None
+duality gap    : None
+max violation  : 1.5856176955765001e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3777765546886324
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7209549925013313e-10
+verified       : True
+    A7  N=20000 T= 5000  omega=0.375034  mv=1.6e-10  FAIL  (113.6s)
+    A6  N=20000 T= 5000  omega=0.377777  mv=1.7e-10  FAIL  (113.9s)
+Batch 1 wall: 114.3s
+
+=== Batch 2: 5 jobs at N=50000, T=10000  (2 workers x 8 threads) ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:284: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:284: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:294: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:294: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3753948116545165
+dual optimum   : None
+duality gap    : None
+max violation  : 2.569279181174975e-10
+verified       : True
+    A7  N=50000 T=10000  omega=0.375395  mv=2.6e-10  FAIL  (710.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37819871135469446
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9626216791635877e-10
+verified       : True
+    A6  N=50000 T=10000  omega=0.378199  mv=2.0e-10  FAIL  (712.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.377528100954693
+dual optimum   : None
+duality gap    : None
+max violation  : 2.556328984704235e-10
+verified       : True
+    A9  N=50000 T=10000  omega=0.377528  mv=2.6e-10  FAIL  (626.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.376961766423201
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8499273808259865e-10
+verified       : True
+    B1  N=50000 T=10000  omega=0.376962  mv=1.8e-10  FAIL  (629.2s)

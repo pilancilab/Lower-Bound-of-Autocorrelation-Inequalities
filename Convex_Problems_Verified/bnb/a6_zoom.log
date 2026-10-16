@@ -1,0 +1,901 @@
+=== A6_zoom: 100 cells | N=10000 T=2000 R=10 | h-cell-width=0.0032, p-cell-width=0.0400 | q=(-1.0, -0.05) | workers=8 ===
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:271: RuntimeWarning: divide by zero encountered in divide
+  core = ((-1.0) ** ks) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+/home/sykim/Theory_Harness/Convex_Problems_Verified/EMOP.py:281: RuntimeWarning: divide by zero encountered in divide
+  core = ks * ((-1.0) ** ks) * np.sin(np.pi * ms / 2.0) / (ms**2 - 4 * ks**2)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38030688628454973
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0099071880053977e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.380530350659133
+dual optimum   : None
+duality gap    : None
+max violation  : 2.469007168259905e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3806095566792561
+dual optimum   : None
+duality gap    : None
+max violation  : 1.401919083698997e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3803392975893259
+dual optimum   : None
+duality gap    : None
+max violation  : 2.1506818021933306e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38037647112757705
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9944328994881723e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38074080861833176
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3440220631878198e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38042003452263357
+dual optimum   : None
+duality gap    : None
+max violation  : 2.516347633141434e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38046911111967957
+dual optimum   : None
+duality gap    : None
+max violation  : 1.784657924319786e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3816704991084562
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1976680231896332e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38387782057216163
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4535117027648404e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3797314729926804
+dual optimum   : None
+duality gap    : None
+max violation  : 2.194602780159014e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37976927134835037
+dual optimum   : None
+duality gap    : None
+max violation  : 2.652754074838979e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37969811498174855
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3429573593072043e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37981131722627814
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8748285730453042e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37986045272076163
+dual optimum   : None
+duality gap    : None
+max violation  : 2.1542800350161408e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3799168113235008
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6396466990698834e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3799907980893618
+dual optimum   : None
+duality gap    : None
+max violation  : 2.42404646643166e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3801686521167155
+dual optimum   : None
+duality gap    : None
+max violation  : 1.410116415401317e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3812603542881977
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8812700870341793e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3835689581566372
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5466517257100897e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37919878437982096
+dual optimum   : None
+duality gap    : None
+max violation  : 2.640146937282848e-10
+verified       : True
+  [21/100] h=[0.0144,0.0176] p=[0.0800,0.1200]  omega=0.37920  FAIL  (32.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37912927955262177
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6626588468128013e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3791610844428954
+dual optimum   : None
+duality gap    : None
+max violation  : 1.554888942700925e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37923973663795435
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4889483563763385e-10
+verified       : True
+  [22/100] h=[0.0144,0.0176] p=[0.0000,0.0400]  omega=0.37913  FAIL  (33.6s)
+  [23/100] h=[0.0144,0.0176] p=[0.0400,0.0800]  omega=0.37916  FAIL  (33.4s)
+  [24/100] h=[0.0144,0.0176] p=[0.1200,0.1600]  omega=0.37924  FAIL  (32.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792877852849639
+dual optimum   : None
+duality gap    : None
+max violation  : 1.540436614477867e-10
+verified       : True
+  [25/100] h=[0.0144,0.0176] p=[0.1600,0.2000]  omega=0.37929  FAIL  (32.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37934338451194094
+dual optimum   : None
+duality gap    : None
+max violation  : 2.143573599278168e-10
+verified       : True
+  [26/100] h=[0.0144,0.0176] p=[0.2000,0.2400]  omega=0.37934  FAIL  (30.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37941089245323534
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3425704465831224e-10
+verified       : True
+  [27/100] h=[0.0144,0.0176] p=[0.2400,0.2800]  omega=0.37941  FAIL  (30.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3796698338840882
+dual optimum   : None
+duality gap    : None
+max violation  : 1.616992598252407e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3786242815719052
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7222589494437536e-10
+verified       : True
+  [29/100] h=[0.0176,0.0208] p=[0.0400,0.0800]  omega=0.37862  FAIL  (33.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3785925415091274
+dual optimum   : None
+duality gap    : None
+max violation  : 1.506017480268438e-10
+verified       : True
+  [30/100] h=[0.0176,0.0208] p=[0.0000,0.0400]  omega=0.37859  FAIL  (33.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38332470334211005
+dual optimum   : None
+duality gap    : None
+max violation  : 2.084100062072023e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38090997095354207
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9274548097470735e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37865990539708083
+dual optimum   : None
+duality gap    : None
+max violation  : 1.231300009274603e-10
+verified       : True
+  [33/100] h=[0.0176,0.0208] p=[0.0800,0.1200]  omega=0.37866  FAIL  (34.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378700954185499
+dual optimum   : None
+duality gap    : None
+max violation  : 1.2102468500586362e-10
+verified       : True
+  [34/100] h=[0.0176,0.0208] p=[0.1200,0.1600]  omega=0.37870  FAIL  (34.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37874883316727614
+dual optimum   : None
+duality gap    : None
+max violation  : 2.2785245385904297e-10
+verified       : True
+  [35/100] h=[0.0176,0.0208] p=[0.1600,0.2000]  omega=0.37875  FAIL  (30.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3788022556779271
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7769551969749366e-10
+verified       : True
+  [36/100] h=[0.0176,0.0208] p=[0.2000,0.2400]  omega=0.37880  FAIL  (36.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37886536302773793
+dual optimum   : None
+duality gap    : None
+max violation  : 8.97076804606909e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792309201310184
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1721234567275453e-10
+verified       : True
+  [37/100] h=[0.0176,0.0208] p=[0.2400,0.2800]  omega=0.37887  FAIL  (37.1s)
+  [38/100] h=[0.0176,0.0208] p=[0.2800,0.3200]  omega=0.37923  FAIL  (36.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38061193420415695
+dual optimum   : None
+duality gap    : None
+max violation  : 2.01278100030464e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.383122355515444
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6228473593727678e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37822525146901576
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9256340439866883e-10
+verified       : True
+  [41/100] h=[0.0208,0.0240] p=[0.0000,0.0400]  omega=0.37823  FAIL  (39.7s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782456733803132
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3413536421481333e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37826932395549573
+dual optimum   : None
+duality gap    : None
+max violation  : 1.266564023205772e-10
+verified       : True
+  [42/100] h=[0.0208,0.0240] p=[0.0400,0.0800]  omega=0.37825  FAIL  (38.6s)
+  [43/100] h=[0.0208,0.0240] p=[0.0800,0.1200]  omega=0.37827  FAIL  (37.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782961209451635
+dual optimum   : None
+duality gap    : None
+max violation  : 1.217190184854642e-10
+verified       : True
+  [44/100] h=[0.0208,0.0240] p=[0.1200,0.1600]  omega=0.37830  FAIL  (34.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3783278448294847
+dual optimum   : None
+duality gap    : None
+max violation  : 2.460330220210947e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3784021453431077
+dual optimum   : None
+duality gap    : None
+max violation  : 1.0942751733523416e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37836136738381965
+dual optimum   : None
+duality gap    : None
+max violation  : 1.262877527652504e-10
+verified       : True
+  [45/100] h=[0.0208,0.0240] p=[0.1600,0.2000]  omega=0.37833  FAIL  (36.9s)
+  [46/100] h=[0.0208,0.0240] p=[0.2400,0.2800]  omega=0.37840  FAIL  (36.5s)
+  [47/100] h=[0.0208,0.0240] p=[0.2000,0.2400]  omega=0.37836  FAIL  (37.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3788891880198848
+dual optimum   : None
+duality gap    : None
+max violation  : 1.208957326015534e-10
+verified       : True
+  [48/100] h=[0.0208,0.0240] p=[0.2800,0.3200]  omega=0.37889  FAIL  (36.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38037166404160383
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0243117766383968e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3781515093759109
+dual optimum   : None
+duality gap    : None
+max violation  : 1.5264028403350928e-10
+verified       : True
+  [50/100] h=[0.0240,0.0272] p=[0.0000,0.0400]  omega=0.37815  FAIL  (38.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38296113441012636
+dual optimum   : None
+duality gap    : None
+max violation  : 1.52304164012804e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37816808375979516
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0819961894403584e-10
+verified       : True
+  [52/100] h=[0.0240,0.0272] p=[0.0400,0.0800]  omega=0.37817  FAIL  (33.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37820598376126935
+dual optimum   : None
+duality gap    : None
+max violation  : 2.0679946117652982e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3781853368618502
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4019201939220217e-10
+verified       : True
+  [53/100] h=[0.0240,0.0272] p=[0.1200,0.1600]  omega=0.37821  FAIL  (34.7s)
+  [54/100] h=[0.0240,0.0272] p=[0.0800,0.1200]  omega=0.37819  FAIL  (35.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37822800718831573
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6797629427301765e-10
+verified       : True
+  [55/100] h=[0.0240,0.0272] p=[0.1600,0.2000]  omega=0.37823  FAIL  (35.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37825296884233534
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4021244749585528e-10
+verified       : True
+  [56/100] h=[0.0240,0.0272] p=[0.2000,0.2400]  omega=0.37825  FAIL  (35.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782819820715088
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3771000479835017e-10
+verified       : True
+  [57/100] h=[0.0240,0.0272] p=[0.2400,0.2800]  omega=0.37828  FAIL  (34.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38029121125135085
+dual optimum   : None
+duality gap    : None
+max violation  : 1.6601219872015328e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3828733103303912
+dual optimum   : None
+duality gap    : None
+max violation  : 1.5803657855585108e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3788040224441042
+dual optimum   : None
+duality gap    : None
+max violation  : 1.075721126164806e-10
+verified       : True
+  [60/100] h=[0.0240,0.0272] p=[0.2800,0.3200]  omega=0.37880  FAIL  (36.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37817390556962127
+dual optimum   : None
+duality gap    : None
+max violation  : 1.311608546872376e-10
+verified       : True
+  [61/100] h=[0.0272,0.0304] p=[0.0400,0.0800]  omega=0.37817  FAIL  (33.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3781636367410786
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8670492403117557e-10
+verified       : True
+  [62/100] h=[0.0272,0.0304] p=[0.0000,0.0400]  omega=0.37816  FAIL  (34.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3781861026324627
+dual optimum   : None
+duality gap    : None
+max violation  : 1.139279173878547e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782004208037602
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3587130893611722e-10
+verified       : True
+  [63/100] h=[0.0272,0.0304] p=[0.0800,0.1200]  omega=0.37819  FAIL  (34.0s)
+  [64/100] h=[0.0272,0.0304] p=[0.1200,0.1600]  omega=0.37820  FAIL  (33.8s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782164872475637
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1913303150535605e-10
+verified       : True
+  [65/100] h=[0.0272,0.0304] p=[0.1600,0.2000]  omega=0.37822  FAIL  (33.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3782660122250612
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8576029077067325e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37823649630762524
+dual optimum   : None
+duality gap    : None
+max violation  : 2.2753276513910216e-10
+verified       : True
+  [66/100] h=[0.0272,0.0304] p=[0.2000,0.2400]  omega=0.37824  FAIL  (34.3s)
+  [67/100] h=[0.0272,0.0304] p=[0.2400,0.2800]  omega=0.37827  FAIL  (33.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3788539801002282
+dual optimum   : None
+duality gap    : None
+max violation  : 1.3412543585786598e-11
+verified       : True
+  [68/100] h=[0.0272,0.0304] p=[0.2800,0.3200]  omega=0.37885  FAIL  (34.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3828525029653991
+dual optimum   : None
+duality gap    : None
+max violation  : 1.8365203275806131e-10
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37840922486086576
+dual optimum   : None
+duality gap    : None
+max violation  : 3.7653541683510884e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3784041831346547
+dual optimum   : None
+duality gap    : None
+max violation  : 8.918809608516633e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38034457506105795
+dual optimum   : None
+duality gap    : None
+max violation  : 4.8611664981166105e-11
+verified       : True
+  [70/100] h=[0.0304,0.0336] p=[0.0400,0.0800]  omega=0.37841  FAIL  (33.8s)
+  [71/100] h=[0.0304,0.0336] p=[0.0000,0.0400]  omega=0.37840  FAIL  (34.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3784160913163322
+dual optimum   : None
+duality gap    : None
+max violation  : 5.0343002276917805e-11
+verified       : True
+  [73/100] h=[0.0304,0.0336] p=[0.0800,0.1200]  omega=0.37842  FAIL  (32.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3784237578812748
+dual optimum   : None
+duality gap    : None
+max violation  : 8.159622450932581e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378432352781491
+dual optimum   : None
+duality gap    : None
+max violation  : 1.1700695441319887e-10
+verified       : True
+  [74/100] h=[0.0304,0.0336] p=[0.1200,0.1600]  omega=0.37842  FAIL  (31.9s)
+  [75/100] h=[0.0304,0.0336] p=[0.1600,0.2000]  omega=0.37843  FAIL  (32.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37844173375803847
+dual optimum   : None
+duality gap    : None
+max violation  : 1.372511496222726e-10
+verified       : True
+  [76/100] h=[0.0304,0.0336] p=[0.2000,0.2400]  omega=0.37844  FAIL  (32.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3791900357203421
+dual optimum   : None
+duality gap    : None
+max violation  : 5.648753974582878e-12
+verified       : True
+  [77/100] h=[0.0304,0.0336] p=[0.2800,0.3200]  omega=0.37919  FAIL  (32.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3784951133925365
+dual optimum   : None
+duality gap    : None
+max violation  : 1.525651300738652e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38072462861601714
+dual optimum   : None
+duality gap    : None
+max violation  : 9.285899300493817e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38307321181154924
+dual optimum   : None
+duality gap    : None
+max violation  : 2.200470308844158e-10
+verified       : True
+  [78/100] h=[0.0304,0.0336] p=[0.2400,0.2800]  omega=0.37850  FAIL  (33.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37878544619666965
+dual optimum   : None
+duality gap    : None
+max violation  : 3.865646165280602e-11
+verified       : True
+  [81/100] h=[0.0336,0.0368] p=[0.0000,0.0400]  omega=0.37879  FAIL  (33.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3787884089025544
+dual optimum   : None
+duality gap    : None
+max violation  : 1.9724605569990463e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37879283148272336
+dual optimum   : None
+duality gap    : None
+max violation  : 1.7975671239298454e-11
+verified       : True
+  [82/100] h=[0.0336,0.0368] p=[0.0400,0.0800]  omega=0.37879  FAIL  (32.4s)
+  [83/100] h=[0.0336,0.0368] p=[0.0800,0.1200]  omega=0.37879  FAIL  (32.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3787978808453758
+dual optimum   : None
+duality gap    : None
+max violation  : 2.3121221891528667e-11
+verified       : True
+  [84/100] h=[0.0336,0.0368] p=[0.1200,0.1600]  omega=0.37880  FAIL  (32.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3788031441581703
+dual optimum   : None
+duality gap    : None
+max violation  : 2.2862984016000855e-11
+verified       : True
+  [85/100] h=[0.0336,0.0368] p=[0.1600,0.2000]  omega=0.37880  FAIL  (30.1s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37963253388283846
+dual optimum   : None
+duality gap    : None
+max violation  : 7.554673840956884e-12
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37888387663049616
+dual optimum   : None
+duality gap    : None
+max violation  : 1.555083313121465e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.378809051346456
+dual optimum   : None
+duality gap    : None
+max violation  : 2.425120688599215e-11
+verified       : True
+  [87/100] h=[0.0336,0.0368] p=[0.2400,0.2800]  omega=0.37888  FAIL  (32.4s)
+  [88/100] h=[0.0336,0.0368] p=[0.2000,0.2400]  omega=0.37881  FAIL  (32.6s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3812098758694348
+dual optimum   : None
+duality gap    : None
+max violation  : 8.309841177279488e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792546106989072
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5341334873871592e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3835120438134274
+dual optimum   : None
+duality gap    : None
+max violation  : 1.4736661364423732e-10
+verified       : True
+  [90/100] h=[0.0368,0.0400] p=[0.0000,0.0400]  omega=0.37925  FAIL  (32.2s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37926179138751026
+dual optimum   : None
+duality gap    : None
+max violation  : 2.4956975662746363e-11
+verified       : True
+  [92/100] h=[0.0368,0.0400] p=[0.0800,0.1200]  omega=0.37926  FAIL  (30.9s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37925804021394105
+dual optimum   : None
+duality gap    : None
+max violation  : 2.5959618076285342e-11
+verified       : True
+  [93/100] h=[0.0368,0.0400] p=[0.0400,0.0800]  omega=0.37926  FAIL  (34.5s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37926615599033064
+dual optimum   : None
+duality gap    : None
+max violation  : 3.318628178817541e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792699881690597
+dual optimum   : None
+duality gap    : None
+max violation  : 2.4527097307611502e-11
+verified       : True
+  [94/100] h=[0.0368,0.0400] p=[0.1200,0.1600]  omega=0.37927  FAIL  (32.4s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.3792754241370858
+dual optimum   : None
+duality gap    : None
+max violation  : 3.74321077012494e-11
+verified       : True
+  [95/100] h=[0.0368,0.0400] p=[0.1600,0.2000]  omega=0.37927  FAIL  (32.2s)
+  [96/100] h=[0.0368,0.0400] p=[0.2000,0.2400]  omega=0.37928  FAIL  (32.3s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.37938175091486015
+dual optimum   : None
+duality gap    : None
+max violation  : 3.552840828092464e-11
+verified       : True
+  [97/100] h=[0.0368,0.0400] p=[0.2400,0.2800]  omega=0.37938  FAIL  (29.0s)
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.380186067389784
+dual optimum   : None
+duality gap    : None
+max violation  : 2.6457109013619874e-11
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38178274188961436
+dual optimum   : None
+duality gap    : None
+max violation  : 8.60128108627102e-12
+verified       : True
+
+=== Verification summary ===
+status         : optimal
+primal optimum : 0.38406672305600265
+dual optimum   : None
+duality gap    : None
+max violation  : 8.394689971936466e-11
+verified       : True
+
+=== A6_zoom: wall=442.0s ===
+  verified pass:   39
+  infeasible:      0
+  threshold-fail:  61
+  solver-err:      0
+  saved /home/sykim/Theory_Harness/Convex_Problems_Verified/bnb/table2_rows_state/A6_zoom.json
