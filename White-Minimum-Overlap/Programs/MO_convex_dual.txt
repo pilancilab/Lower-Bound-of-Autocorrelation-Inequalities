@@ -1,0 +1,603 @@
+/*********************************************
+ * OPL 22.1.0.0 Model
+ * Author: ethanwhite
+ * Creation Date: Mar 11, 2023 at 1:39:49 PM
+ *********************************************/
+
+
+// This program includes a print to txt file, specify a location
+// Variables within flow control must match the input selection below, 
+// For example, N = mN, T = mT, etc. 
+// For a feasible solution found, all variables assignments will be printed
+// along with the evaluations of constraints for that solution
+
+// See Appendices of https://arxiv.org/abs/2201.05704 for more information
+
+
+
+
+// INPUTS
+
+
+ int N = 5000;
+ int T = 2000;
+ int R = 10;
+ float L = 2/N;
+ int totalvar = 2*N+2*T+2*R;
+ 
+ float Omega = 0.379;
+
+ float p1=0.42;
+ float p2= 0.42;
+ 
+ float h1 = 0.0;
+ float h2 =0.0;
+ 
+ float q1  = -0.02;
+ float q2 = 0.02;
+ float maxQ = 0.02;
+
+
+
+main{
+  
+  thisOplModel.generate();
+  
+  var mN = 5000;
+  var mT = 2000;
+  var mR = 10;
+  var mp1 = 0.42;
+  var mp2 = 0.42;
+  var mq1 = -0.02;
+  var mq2 = 0.02;
+  var mh1 = 0.0;
+  var mh2 = 0.0;
+  var momega = 0.379;
+  
+  
+ if (cplex.solve()){
+    var ofile =  new IloOplOutputFile("YOURCHOICEOFLOCATION/min_over_dual_data")
+    ofile.writeln("N = ",mN,". R = ",mR, ". T = ",mT);
+ 	ofile.writeln("p1 = ",mp1,". p2 = ",mp2, "q1 = ",mq1,". q2 = ",mq2, ". h1 = ",mh1, ". h2 = ", mh2, ". Omega = ", momega);
+    
+    ofile.writeln()
+    
+    ofile.writeln(thisOplModel.printSolution());
+    
+    ofile.writeln()
+    
+     
+    ofile.writeln("y_obnd: ", thisOplModel.y_obnd);
+    
+  ofile.writeln("y_vbound_L and y_wbound_L: ");
+  
+  for (var j = 1; j<=mN; j++){
+    ofile.writeln(thisOplModel.y_vbound_L[j]," ", thisOplModel.y_wbound_L[j]);
+    
+  }
+  
+  ofile.writeln(thisOplModel.y_vbound_L[1]);
+    
+    
+
+    
+    
+    
+    ofile.writeln("y_ck and dk stuff");
+    
+
+    
+      for (var m = 2; m<=mT; m++){
+    ofile.writeln(thisOplModel.y_ckbound_U[m], " ",thisOplModel.y_dkbound_U[m]);
+    
+  }
+  
+      ofile.writeln(thisOplModel.y_ckbound_U1, " ",thisOplModel.y_dkbound_U1);
+  
+  
+
+  
+  
+      ofile.writeln("y_ep and y_del stuff");
+  
+        for (var m = 1; m<=mR; m++){
+    ofile.writeln(thisOplModel.y_ep_U[m]," ", thisOplModel.y_del_U[m]);
+    
+  }
+    
+      ofile.writeln("cone stuff");
+
+    
+    
+    for (var m = 1; m<=10; m++){
+    ofile.writeln(thisOplModel.conecoseven[m]," ",thisOplModel.conecosodd[m]);}
+    
+
+    ofile.writeln("conepar: ", thisOplModel.conepar);
+    
+    
+    
+    ofile.close();
+    
+  }
+  else {
+   writeln("No solution");
+  }
+}
+ 
+ 
+ 
+ range rangeN = 1..N;
+ range rangeN2 = 2..N;
+ 
+ range rangeR = 1..R;
+ range range2R = 1..(2*R);
+ range rangeT = 1..T;
+ range rangeT2 = 2..T;
+ range range2T = 1..(2*T);
+ range rangeTR = 1..(2*T+2*R);
+ range rangeA = 1..(2*N+2*T+2*R);
+ 
+ 
+ // DATA
+ 
+ // Declarations
+ 
+ // Quadratic:
+ 
+float A_coseven[1..R][1..3][0..totalvar];
+float b_coseven[1..R][1..3];
+float c_coseven[1..R][0..totalvar];
+float d_coseven[1..R];
+
+float A_cosodd[1..R][1..3][0..totalvar];
+float b_cosodd[1..R][1..3];
+float c_cosodd[1..R][0..totalvar];
+float d_cosodd[1..R];
+
+float A_par[1..2*T][0..totalvar];
+float d_par;
+
+// Linear: 
+
+
+float c_sum[1..2][0..totalvar];
+float d_sum[1..2];
+
+float c_mean[0..totalvar];
+float d_mean;
+
+float c_mom[0..totalvar];
+float d_mom;
+
+
+float c_ep[1..2][1..R][0..totalvar];
+float d_ep[1..2][1..R];
+
+float c_del[1..2][1..R][0..totalvar];
+float d_del[1..2][1..R];
+
+
+float c_sin_lower_odd[1..R][0..totalvar];
+float c_sin_lower_even[1..R][0..totalvar];
+float c_sin_upper_odd[1..R][0..totalvar];
+float c_sin_upper_even[1..R][0..totalvar];
+
+
+float c_c1[1..2][0..totalvar];
+float d_c1[1..2];
+
+float c_d1[1..2][0..totalvar];
+float d_d1[1..2];
+
+float c_cosup[0..totalvar];
+float d_cosup;
+
+float c_ckbound[1..2][1..T][0..totalvar];
+float d_ckbound[1..2][1..T];
+
+float c_dkbound[1..2][1..T][0..totalvar];
+float d_dkbound[1..2][1..T];
+
+
+
+// Assignment: 
+
+float pi = 3.141592653589793;
+ 
+ 
+ float alpha[1..N][1..2*R];
+  execute{
+ for (var j in rangeN){
+   for (var m in range2R){
+    	alpha[j][m]=Math.cos(pi*m*L*(j-0.5)/2);
+   }
+ }}
+  
+  
+ float beta[1..N][1..(2*R)];
+  execute{
+ for (var j in rangeN){
+   for (var m in range2R){
+    	beta[j][m]= Math.sin(0.5*pi*m*L*(j-0.5));
+      	
+   }
+ }}
+ 
+ int signvec[1..(2*T)];
+  execute{
+ for (var i in range2T){
+   signvec[i] = Math.pow(-1,i+1);
+ }}
+ 
+
+float amodd[1..R][1..(2*T+2*R)];
+float bmodd[1..R][1..(2*T+2*R)];
+
+execute{
+  for (var m in rangeR){
+
+	var mo =2*m-1;
+    var am_coef = 2*mo*signvec[m]/pi;
+    var bm_coef = 4*signvec[m]/pi;
+    
+    amodd[m][2*T+m] = 1;
+    bmodd[m][2*T+R+m] = 1;
+    
+    
+    for (var k in rangeT){
+      var am_inside_coef = -signvec[k]/(mo*mo-4*k*k);
+      var bm_inside_coef = -k*signvec[k]/(mo*mo-4*k*k);
+      
+      amodd[m][k] = am_inside_coef*am_coef;
+      bmodd[m][T+k] = bm_inside_coef*bm_coef;
+      
+    }    
+  }
+}
+
+
+
+
+execute{
+  for (var j in rangeN){
+
+    
+    c_sum[1][j] = 1;
+    c_sum[1][N+j] = 1;
+    c_sum[2][j] = -1;
+    c_sum[2][N+j] = -1;
+    
+    c_mom[j] = -L*L*Math.pow((j-1),2);
+    c_mom[N+j] = -L*L*Math.pow((j-1),2);
+    
+    c_mean[j] = L*j
+    c_mean[N+j] = -L*(j-1)
+    
+    c_cosup[j] = alpha[j][2]+pi*L/2;
+    c_cosup[N+j] = alpha[j][2]+pi*L/2;
+    
+   
+  }
+  
+  
+   d_sum[1] = -N/2;
+   d_sum[2] = N/2;
+   
+   d_mom = (2/3+0.5*h2*h2)*N/2;
+   
+   d_mean = -h1*N/2;
+   
+   d_cosup = 0.5*N*(p2*p2+maxQ*maxQ);
+   
+   c_c1[1][2*N+1] = 1;
+   c_c1[2][2*N+1] = -1;
+   
+   c_d1[1][2*N+T+1] = 1;
+   c_d1[2][2*N+T+1] = -1;
+   
+   d_c1[1] = -p1;
+   d_c1[2] = p2;
+   
+   d_d1[1] = -q1;
+   d_d1[2] = q2;
+   
+   
+   
+   
+}
+
+
+
+execute{
+  
+  d_par = Math.pow(0.5,0.5);
+  
+  for (var t in rangeT){
+    c_ckbound[1][t][2*N+t] = 1;
+    c_ckbound[2][t][2*N+t] = -1;
+    c_dkbound[1][t][2*N+T+t] = 1;
+    c_dkbound[2][t][2*N+T+t] = -1;
+    
+  d_ckbound[1][t] = 2/pi;
+  d_ckbound[2][t] = 2/pi;
+  d_dkbound[1][t] = 2/pi;
+  d_dkbound[2][t] = 2/pi;
+  
+  
+  A_par[t][2*N+t] = 1;
+  A_par[T+t][2*N+T+t] = 1;
+  
+  
+  }
+  
+  
+}
+
+
+
+
+execute{
+  for (var m in rangeR){
+    var me = 2*m;
+    var mo = 2*m-1;
+    
+    for (var j in rangeN){
+      
+      c_sin_lower_even[m][j] = -(beta[j][me]-pi*me*L/4)*0.5*L;
+      c_sin_lower_even[m][N+j] = (beta[j][me]+pi*me*L/4)*0.5*L;
+      
+      c_sin_upper_even[m][j] = (beta[j][me]+pi*me*L/4)*0.5*L;
+      c_sin_upper_even[m][N+j] = -(beta[j][me]-pi*me*L/4)*0.5*L;
+      
+      c_sin_lower_odd[m][j] = -(beta[j][me]-pi*mo*L/4)*0.5*L;
+      c_sin_lower_odd[m][N+j] = (beta[j][me]+pi*mo*L/4)*0.5*L;
+      
+      c_sin_upper_odd[m][j] = (beta[j][me]+pi*mo*L/4)*0.5*L;
+      c_sin_upper_odd[m][N+j] = -(beta[j][me]-pi*mo*L/4)*0.5*L;
+      
+    }
+    
+   for (var k in rangeTR){
+     
+     var coef = 8*signvec[m]/(mo*pi);
+     
+      c_sin_lower_odd[m][2*N+k] = -coef*bmodd[m][k];
+  
+      c_sin_upper_odd[m][2*N+k] = coef*bmodd[m][k];
+
+     
+     
+   }
+    
+  }
+  
+}
+
+
+
+execute{
+
+  for (var m in rangeR){
+    
+    var mo = 2*m-1;
+    var me = 2*m;
+    
+    var coef = 1/(mo*pi);
+    
+    A_coseven[m][2][2*N+m] = 1;
+    A_coseven[m][3][2*N+T+m] = 1;
+    
+    b_coseven[m][1]  = 0.5;
+    d_coseven[m] = 0.5;
+    
+    b_cosodd[m][1] = 0.5 - coef*coef;
+    b_cosodd[m][2] = signvec[m]*coef;
+    d_cosodd[m] = 0.5+coef*coef;
+    
+   
+    for (var j in rangeN){
+      
+    A_coseven[m][1][j] = 0.5*L*(alpha[j][me]-pi*me*L/4);
+    A_coseven[m][1][N+j] = 0.5*L*(alpha[j][me]-pi*me*L/4);
+    c_coseven[m][j] = -0.5*L*(alpha[j][me]-pi*me*L/4);   
+    c_coseven[m][N+j] = -0.5*L*(alpha[j][me]-pi*me*L/4);
+    
+    A_cosodd[m][1][j] = 0.125*L*(alpha[j][mo]-pi*mo*L/4);
+    A_cosodd[m][1][N+j] = 0.125*L*(alpha[j][mo]-pi*mo*L/4);
+    
+    c_cosodd[m][j] = -0.125*L*(alpha[j][mo]-pi*mo*L/4);
+    c_cosodd[m][N+j] = -0.125*L*(alpha[j][mo]-pi*mo*L/4);
+     
+      
+    }
+    
+    for (var t in rangeTR){
+      
+      A_cosodd[m][1][2*N+t] = -signvec[m]*coef*amodd[m][t];
+      A_cosodd[m][2][2*N+t] = amodd[m][t];
+      A_cosodd[m][3][2*N+t] = bmodd[m][t];
+      
+      c_cosodd[m][2*N+t] = signvec[m]*coef*amodd[m][t];
+      
+    }
+    
+       }
+
+}
+
+
+
+
+
+ float epsilonbounds[1..R];
+ float deltabounds[1..R];
+ 
+   execute{
+ for (var m in rangeR){
+   var denom = (4-m*m/(T*T))*pi;
+   
+   (4-m*m/(T*T))*pi*Math.pow(6*T*T*T,0.5);
+   epsilonbounds[m] = 2*m/(denom*Math.pow(6*T*T*T,0.5));
+   deltabounds[m] = 4/(denom*Math.pow(2*T,0.5));
+ }}
+ 
+
+ 
+ execute{
+  for (var m in rangeR){
+	
+    d_ep[1][m] = epsilonbounds[m];
+    d_ep[2][m] = epsilonbounds[m];
+    
+    d_del[1][m] = deltabounds[m];
+    d_del[2][m] = deltabounds[m];
+    
+    
+    c_ep[1][m][2*N+2*T+m] = 1;
+    c_ep[2][m][2*N+2*T+m] = -1;
+    
+    c_del[1][m][2*N+2*T+R+m] = 1;
+    c_del[2][m][2*N+2*T+R+m] = -1;
+   
+    
+  }
+}
+ 
+ 
+ 
+// Variables:
+
+// Quadratic:
+
+dvar float+ y_coseven[1..R];
+dvar float z_coseven[1..R][1..3];
+
+dvar float+ y_cosodd[1..R];
+dvar float z_cosodd[1..R][1..3];
+
+dvar float+ y_par;
+dvar float z_par[1..2*T];
+
+// Linear:
+
+
+
+dvar float+ y_sum[1..2];
+dvar float+ y_mom;
+dvar float+ y_mean;
+dvar float+ y_sin_lower_even[1..R];
+dvar float+ y_sin_lower_odd[1..R];
+dvar float+ y_sin_upper_even[1..R];
+dvar float+ y_sin_upper_odd[1..R];
+dvar float+ y_c1[1..2];
+dvar float+ y_d1[1..2];
+dvar float+ y_cosup;
+
+dvar float+ y_wbound_U[1..N];
+dvar float+ y_vbound_U[1..N];
+
+dvar float+ y_ckbound_L[1..T];
+dvar float+ y_dkbound_L[1..T];
+
+dvar float+ y_ep_L[1..R];
+dvar float+ y_del_L[1..R];
+
+
+// Expressions:
+
+
+dexpr float ATz_coseven[r in 1..(2*N+2*T)] = sum(m in 1..R) (sum (i in 1..3) A_coseven[m][i][r]*z_coseven[m][i]);
+dexpr float ATz_cosodd[r in 1..(2*N+2*T+2*R)] = sum(m in 1..R) (sum (i in 1..3) A_cosodd[m][i][r]*z_cosodd[m][i]);
+
+dexpr float cy_cos[r in 1..(2*N+2*T+2*R)] = sum(m in 1..R) (c_coseven[m][r]*y_coseven[m]+c_cosodd[m][r]*y_cosodd[m]);
+
+dexpr float cy_sin[j in 1..(2*N+2*T+2*R)] = sum(m in 1..R) (c_sin_lower_even[m][j]*y_sin_lower_even[m]+c_sin_lower_odd[m][j]*y_sin_lower_odd[m]+c_sin_upper_even[m][j]*y_sin_upper_even[m]+c_sin_upper_odd[m][j]*y_sin_upper_odd[m]);
+
+
+dexpr float y_obnd = 1 - ((sum(j in 1..N) y_wbound_U[j])+ (sum(j in 1..N) y_vbound_U[j]));
+
+dexpr float y_wbound_L[j in 1..N] =y_wbound_U[j]- ATz_coseven[j] - ATz_cosodd[j] -cy_cos[j]- c_sum[1][j]*y_sum[1] - c_sum[2][j]*y_sum[2] - c_mean[j]*y_mean - c_mom[j]*y_mom -cy_sin[j]-c_cosup[j]*y_cosup;
+dexpr float y_vbound_L[j in 1..N] = y_vbound_U[j]- ATz_coseven[N+j] - ATz_cosodd[N+j]-cy_cos[N+j] - c_sum[1][N+j]*y_sum[1] - c_sum[2][N+j]*y_sum[2] - c_mean[N+j]*y_mean - c_mom[N+j]*y_mom -cy_sin[N+j]-c_cosup[N+j]*y_cosup;
+
+dexpr float y_ckbound_U1  =y_c1[1]-y_c1[2]+ y_ckbound_L[1]+z_par[1]+ATz_cosodd[2*N+1]+ATz_coseven[2*N+1]+cy_cos[2*N+1];
+dexpr float y_dkbound_U1 = y_d1[1]-y_d1[2]+ y_dkbound_L[1]+z_par[T+1]+ATz_cosodd[2*N+T+1]+ATz_coseven[2*N+T+1]+cy_cos[2*N+T+1]+cy_sin[2*N+T+1];
+
+dexpr float y_ckbound_U[t in 2..T]  = y_ckbound_L[t]+z_par[t] + ATz_cosodd[2*N+t]+ ATz_coseven[2*N+t]+cy_cos[2*N+t];
+dexpr float y_dkbound_U[t in 2..T]  = y_dkbound_L[t]+z_par[T+t]+ ATz_cosodd[2*N+T+t]+ ATz_coseven[2*N+T+t]+cy_cos[2*N+T+t]+cy_sin[2*N+T+t];
+
+dexpr float y_ep_U[m in 1..R] = y_ep_L[m] + ATz_cosodd[2*N+2*T+m]+cy_cos[2*N+2*T+m];
+ 
+dexpr float y_del_U[m in 1..R] = y_del_L[m] + ATz_cosodd[2*N+2*T+R+m]+cy_cos[2*N+2*T+R+m] + cy_sin[2*N+2*T+R+m]; 
+
+// Objective expressions
+
+dexpr float bTz_cos = sum(m in 1..R) (sum(i in 1..3) (b_coseven[m][i]*z_coseven[m][i]+b_cosodd[m][i]*z_cosodd[m][i]));
+dexpr float dy_cos = sum(m in 1..R) (d_coseven[m]*y_coseven[m]+d_cosodd[m]*y_cosodd[m]);
+
+dexpr float dy_epdel = sum(m in 1..R) (d_ep[1][m]*y_ep_L[m]+d_ep[2][m]*y_ep_U[m] +d_del[1][m]*y_del_L[m]+d_del[2][m]*y_del_U[m] );
+
+dexpr float dy_ck = sum(i in 1..2) (d_c1[i]*y_c1[i]) + sum(t in 2..T) (d_ckbound[1][t]*y_ckbound_L[t] + d_ckbound[2][t]*y_ckbound_U[t]) + d_ckbound[1][1]*y_ckbound_L[1] + d_ckbound[2][1]*y_ckbound_U1;
+
+dexpr float dy_dk = sum(i in 1..2) (d_d1[i]*y_d1[i]) + sum(t in 2..T) (d_dkbound[1][t]*y_dkbound_L[t] + d_dkbound[2][t]*y_dkbound_U[t]) + d_dkbound[1][1]*y_dkbound_L[1] + d_dkbound[2][1]*y_dkbound_U1;
+
+dexpr float obj = y_obnd+ bTz_cos + dy_cos + d_sum[1]*y_sum[1]+d_sum[2]*y_sum[2] + d_mom*y_mom +d_mean*y_mean +d_cosup*y_cosup + d_par*y_par + dy_epdel + dy_ck + dy_dk;
+
+ // Quad expr
+ 
+ dexpr float conecoseven[m in 1..R] =  y_coseven[m]*y_coseven[m] - sum(i in 1..3) z_coseven[m][i]*z_coseven[m][i];
+ dexpr float conecosodd[m in 1..R] =  y_cosodd[m]*y_cosodd[m] - sum(i in 1..3) z_cosodd[m][i]*z_cosodd[m][i];
+ dexpr float conepar =  y_par*y_par - sum(i in 1..2*T) z_par[i]*z_par[i] ;
+ 
+ // Program
+ 
+maximize 1;
+ 
+ subject to{
+   
+   
+   -obj >= Omega;
+   
+    
+   
+   y_obnd >= 0;
+   
+   
+   forall (j in 1..N){
+     
+     y_wbound_L[j] >=0; 
+     y_vbound_L[j] >=0; 
+         
+   }
+    
+   y_ckbound_U1 >= 0; 
+   y_dkbound_U1 >= 0;
+   forall(t in 2..T){
+     y_ckbound_U[t] >=0; 
+     y_dkbound_U[t] >=0; 
+   }
+    
+   forall(m in 1..R){
+     y_ep_U[m] >=0; 
+     y_del_U[m] >=0; 
+   }
+    
+    // Quadratic constraints:
+    
+    forall (m in 1..R){
+      conecoseven[m] >= 0;
+      conecosodd[m] >= 0;
+    }
+    
+
+    
+    conepar >= 0;
+   
+    
+ }
+ 
+
+
+ 
+ 
+ 

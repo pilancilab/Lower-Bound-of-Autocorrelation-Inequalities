@@ -1,0 +1,48 @@
+/*********************************************
+ * OPL 22.1.0.0 Model
+ * Author: ethanwhite
+ * Creation Date: Mar 5, 2023 at 5:56:53 PM
+ *********************************************/
+ 
+ 
+ int N = 1000;
+ int R = 25;
+ 
+ float pi = 3.1415926535897932384626;
+ 
+ range rangeN = 1..N;
+ range rangeR = 1..R;
+ 
+ float alphaminus[1..N][1..2*R];
+ 
+ execute{
+   for (var j in rangeN){
+     for (var m in rangeR){
+       alphaminus[j][m] = Math.cos(pi*m*(j-0.5)/N)-pi*m*0.5/N;
+     }
+   }
+ }
+ 
+ 
+ 
+dvar float+ w[1..N];
+dvar float+ Omega;
+
+minimize Omega;
+
+subject to{
+  forall (j in 1..N){
+    w[j] <= Omega;
+  }
+  
+  sum (j in 1..N) w[j] >= N/4;
+  
+  forall (m in 1..R) {
+    
+    sum (j in 1..N) (alphaminus[j][2*m]*w[j])<= 0;
+    
+  }
+  
+  sum(j in 1..N) (j-1)*(j-1)*w[j] <= N*N*N/24;
+  
+}

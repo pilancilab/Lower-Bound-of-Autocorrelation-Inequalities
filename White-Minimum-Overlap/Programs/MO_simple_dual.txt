@@ -1,0 +1,94 @@
+/*********************************************
+ * OPL 22.1.0.0 Model
+ * Author: ethanwhite
+ * Creation Date: Mar 8, 2023 at 12:56:38 PM
+ *********************************************/
+   
+  // Solution will be printed along with evaluations of all constraints
+ 
+  
+  // INPUTS
+  
+ int N = 80000;
+ int R = 20; 
+  
+ main{
+  
+  thisOplModel.generate();
+  
+  var mN = 80000;
+  var mR = 20;
+ 
+ if (cplex.solve()){
+    var ofile =  new IloOplOutputFile("YOURCHOICEOFLOCATION/min_over_data.txt");
+    ofile.writeln("N = ",mN,". R = ",mR);
+    
+    ofile.writeln();
+    
+    ofile.writeln(thisOplModel.printSolution());
+    
+    ofile.writeln()
+    
+     
+ 	ofile.writeln()
+ 	ofile.writeln()
+ 
+ 	ofile.writeln(thisOplModel.con1);
+  
+  for (var j = 1; j<=mN; j++){
+    ofile.writeln(thisOplModel.cons[j]);}
+    
+    ofile.close();
+    
+  
+}  
+  else {
+   writeln("No solution");
+  }
+}
+ 
+ 
+ 
+
+
+ // DATA 
+ 
+ float pi = 3.1415926535897932384626;
+ 
+ range rangeN = 1..N;
+ range rangeR = 1..R;
+  
+ 
+ float alphaminus[1..N][1..R];
+ 
+ execute{
+   for (var j in rangeN){
+     for (var m in rangeR){
+       alphaminus[j][m] = Math.cos(pi*m*(2*j-1)/N)-pi*m/N;
+     }
+   }
+ }
+ 
+
+// DUAL PROGRAM: 
+
+// Variables:
+dvar float+ Y[1..(N+R+3)];
+
+dexpr float objY = 0.25*N*(Y[N+1]-Y[N+2]-Y[N+3]/6);
+
+dexpr float con1 = sum(j in 1..N)Y[j] - 1;
+
+dexpr float cons[j in 1..N] = -Y[j]+Y[N+1]-Y[N+2]-((j-1)/N)*((j-1)/N)*Y[N+3]-sum(m in 1..R) Y[N+3+m]*alphaminus[j][m];
+
+maximize objY;
+
+subject to{
+
+  // Constraints are mildly tightened to ensure solution is feasible
+
+ con1 <= -0.00000000001;
+ forall (j in 1..N){
+   cons[j]<= -0.00000000001;
+ }
+}

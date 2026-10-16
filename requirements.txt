@@ -1,0 +1,38 @@
+# Theory_Harness -- Python dependencies
+#
+# Generated 2026-10-16 from the working install on mert-dell-gpu (Python 3.10.12).
+# Requires Python 3.10 or newer (per the root README).
+#
+# Install from the workspace root:
+#   python3 -m venv .venv
+#   . .venv/bin/activate
+#   python -m pip install -r requirements.txt
+#
+# PROVENANCE: these are the versions that work on the machine the results were
+# produced on, captured after the fact. The stored result JSONs do not record
+# library versions, so this file is "known-good", not a certified replay of any
+# particular recorded run. Relax `==` to `>=` if you hit resolver conflicts.
+
+# --- core numerics / convex modeling ---------------------------------------
+numpy==2.2.6
+scipy==1.15.3
+cvxpy==1.7.5
+mpmath==1.3.0            # high-precision arithmetic in the certification paths
+
+# --- solver backends -------------------------------------------------------
+# Reached through cvxpy's solver= argument; never imported directly.
+scs==3.2.11              # open-source fallback, no license required
+Mosek==11.1.10           # default for most SDP experiments; REQUIRES A LICENSE.
+                         # Convex_Problems_Verified/certified_bound.py uses
+                         # MOSEK unconditionally -- there is no SCS fallback in
+                         # the dual-witness certifier. Put a valid mosek.lic in
+                         # $HOME/mosek/ or set MOSEKLM_LICENSE_FILE.
+
+# --- plotting / reporting --------------------------------------------------
+matplotlib==3.10.8
+pandas==2.3.3            # "1.Autocorrelation Inequality_6.2/plot_objectives.py"
+
+# --- experiment-specific ---------------------------------------------------
+cma==4.4.4               # "3.Upper bound trial/v9/solver.py" (CMA-ES search)
+fpdf2==2.8.7             # Convex_Problems_Verified/bnb/render_cell_table_pdf.py
+                         # NB: the package is fpdf2, the import module is `fpdf`
